@@ -1,0 +1,8 @@
+$default-color: #262525;
+$purple: #9661B0;
+
+@mixin title-font {
+  font-weight: 500;
+  font-size: 4.5rem;
+  line-height: 5.71rem;
+}
