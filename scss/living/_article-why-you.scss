@@ -1,0 +1,45 @@
+@import "../param";
+
+.article-why-you {
+  margin-bottom: 18rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text-container {
+    width: 98rem;
+  }
+
+  &__text-block {
+    margin-bottom: 5rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__image-container {
+    width: 31.7rem;
+  }
+
+  &__image-block {
+    width: 31.7rem;
+    height: 45.4rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:nth-child(-n + 1) {
+      margin-bottom: 5rem;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 @import "set";
 @import "components";
 
+@import "living/article-why-you";
+@import "living/list-features";
+
 body.lock {
   overflow: hidden;
 }

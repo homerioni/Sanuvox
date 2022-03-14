@@ -34,3 +34,17 @@
     fill: $default-color;
   }
 }
+
+.article {
+  &__title {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.07rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #62636C;
+  }
+}
