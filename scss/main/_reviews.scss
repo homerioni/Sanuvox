@@ -55,6 +55,7 @@
   }
 
   &__item {
+    height: auto;
     margin-top: 2.7rem;
     padding: 2.9rem 4.2rem 4.3rem 4.9rem;
     background-color: #F6F7FA;
@@ -115,9 +116,16 @@
   }
 
   &__item-text {
+    display: -webkit-box;
+    -ms-line-clamp: 10;
+    -webkit-line-clamp: 10;
+    line-clamp: 10;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
     margin-bottom: 4rem;
     font-size: 1.9rem;
     line-height: 2.6rem;
+    overflow: hidden;
   }
 
   &__item-rating-block {
@@ -143,11 +151,17 @@
       margin-right: 1.3rem;
 
       path {
-        fill: $purple;
+        fill: #E6EAF4;
       }
 
       &:last-child {
         margin-right: 0;
+      }
+
+      &.fill {
+        path {
+          fill: $purple;
+        }
       }
     }
   }

@@ -4,6 +4,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  width: fit-content;
   height: 7.1rem;
   padding-left: 2.9rem;
 
@@ -32,6 +33,12 @@
     width: 3.4rem;
     height: 1.2rem;
     fill: $default-color;
+  }
+
+  &--gray {
+    &:before {
+      background: #E6EAF4;
+    }
   }
 }
 
@@ -109,6 +116,28 @@
 }
 
 @media (max-width: 48em) {
+  .circle-btn {
+    height: 11.6rem;
+    padding-left: 5.8rem;
+
+    &:before {
+      width: 11.6rem;
+      height: 11.6rem;
+    }
+
+    &__text {
+      top: -1px;
+      margin-right: 2.8rem;
+      font-size: 3.6rem;
+      line-height: 4.55rem;
+    }
+
+    &__arrow {
+      width: 6.8rem;
+      height: 2.4rem;
+    }
+  }
+
   .info-cards {
     &__cards {
     }

@@ -1,0 +1,168 @@
+@import "../param";
+
+.video {
+  margin-bottom: 18rem;
+
+  &__title-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  &__title {
+    @include title-font;
+  }
+
+  &__btn {
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 67.5rem;
+
+    &:nth-child(n + 3) {
+      margin-top: 4.5rem;
+    }
+  }
+
+  &__preview {
+    width: 100%;
+    height: 31rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__play-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.8rem;
+    height: 7.8rem;
+    border-radius: 100%;
+    border: 1rem solid $purple;
+    background-color: #fff;
+    margin: -3.9rem auto -2.3rem auto;
+
+    > svg {
+      width: 1.2rem;
+      height: 1.9rem;
+      margin-left: 0.5rem;
+
+      path {
+        fill: $default-color;
+      }
+    }
+  }
+
+  &__data-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.3rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #62636C;
+  }
+
+  &__date {
+  }
+
+  &__link-name {
+  }
+
+  &__item-title {
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  &__item-description {
+    width: 52rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .video {
+    margin-bottom: 20rem;
+
+    &__title-block {
+      margin-bottom: 7rem;
+    }
+
+    &__title {
+    }
+
+    &__btn {
+      margin: 0 auto;
+    }
+
+    &__content {
+      margin-bottom: 7rem;
+    }
+
+    &__item {
+      width: 100%;
+
+      &:nth-child(n + 2) {
+        margin-top: 7rem;
+      }
+    }
+
+    &__preview {
+      width: 100%;
+      height: 31rem;
+    }
+
+    &__play-btn {
+      width: 9.8rem;
+      height: 9.8rem;
+      border: 1.2rem solid $purple;
+      margin: -4.9rem auto -2.5rem auto;
+
+      > svg {
+        width: 1.6rem;
+        height: 2.6rem;
+        margin-left: 0.4rem;
+      }
+    }
+
+    &__data-block {
+      margin-bottom: 2.5rem;
+      font-size: 2.8rem;
+      line-height: 2.55rem;
+      color: #62636C;
+    }
+
+    &__date {
+    }
+
+    &__link-name {
+    }
+
+    &__item-title {
+      margin-bottom: 2rem;
+      font-size: 3.6rem;
+      line-height: 3.6rem;
+    }
+
+    &__item-description {
+      width: 100%;
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
+}
