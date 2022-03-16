@@ -1,0 +1,165 @@
+.footer {
+  &__block {
+    &--top {
+      padding: 9.3rem 0;
+      background-color: #E6EAF4;
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &--bottom {
+      padding: 2rem 0;
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 26.6rem;
+    height: 4.9rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 28rem;
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+
+    &--title {
+      margin-bottom: 1.6rem;
+      font-weight: 600;
+      font-size: 1.9rem;
+      line-height: 2.8rem;
+    }
+  }
+
+  &__link-bottom {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #62636C;
+  }
+
+  &__copyright {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  &__req-logo {
+    display: block;
+    width: 18.8rem;
+    height: 4.7rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .footer {
+    &__block {
+      &--top {
+        padding: 10rem 0;
+
+        .container {
+          flex-direction: column;
+          justify-content: normal;
+        }
+      }
+
+      &--bottom {
+        padding: 4rem 0;
+
+        .container {
+          flex-direction: column;
+          justify-content: normal;
+          align-items: center;
+        }
+      }
+    }
+
+    &__logo {
+      width: 100%;
+      height: 10rem;
+      margin-bottom: 5rem;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__item-block {
+      width: 100%;
+      max-width: none;
+
+      &:nth-child(n + 2) {
+        margin-top: 5rem;
+      }
+    }
+
+    &__list {
+    }
+
+    &__list-item {
+      margin-bottom: 2.6rem;
+      font-size: 3rem;
+      line-height: 4.2rem;
+
+      &--title {
+        margin-bottom: 3.2rem;
+        font-size: 3.8rem;
+        line-height: 4.6rem;
+      }
+    }
+
+    &__link-bottom {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    &__copyright {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      margin-bottom: 5rem;
+    }
+
+    &__req-logo {
+      width: 100%;
+      height: 12rem;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
