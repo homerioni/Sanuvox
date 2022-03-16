@@ -5,4 +5,9 @@ $purple: #9661B0;
   font-weight: 500;
   font-size: 4.5rem;
   line-height: 5.71rem;
+
+  @media (max-width: 48em) {
+    font-size: 6rem;
+    line-height: 6.8rem;
+  }
 }

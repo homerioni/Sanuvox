@@ -1,0 +1,271 @@
+@import "../param";
+
+.reviews {
+  margin-bottom: 18rem;
+
+  &__title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+  }
+
+  &__title {
+    @include title-font;
+  }
+
+  &__navigation-block {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17.5rem;
+  }
+
+  &__arrow {
+    flex: none;
+    width: 3.4rem;
+    height: 3.4rem;
+    cursor: pointer;
+
+    path {
+      fill: $default-color;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    margin: 0 2.5rem;
+
+    .swiper-pagination-current {
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    .swiper-pagination-total {
+      margin-top: 0.9rem;
+      margin-left: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  &__slider {
+  }
+
+  &__item {
+    margin-top: 2.7rem;
+    padding: 2.9rem 4.2rem 4.3rem 4.9rem;
+    background-color: #F6F7FA;
+  }
+
+  &__item-title-block {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+
+  &__item-image-block {
+    position: relative;
+    flex: none;
+    width: 11.5rem;
+    height: 11.5rem;
+    margin-right: 2rem;
+    margin-top: -5.6rem;
+    border: 1.2rem solid #F6F7FA;
+    border-radius: 100%;
+    background-color: #fff;
+    overflow: hidden;
+
+    > svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 3.2rem;
+      height: 3.2rem;
+
+      path {
+        fill: #C2C8D7;
+      }
+    }
+
+    > img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__item-name-block {
+  }
+
+  &__item-name {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+  }
+
+  &__item-city {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    color: #62636C;
+  }
+
+  &__item-text {
+    margin-bottom: 4rem;
+    font-size: 1.9rem;
+    line-height: 2.6rem;
+  }
+
+  &__item-rating-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.7rem;
+  }
+
+  &__item-rating {
+    margin-right: 1.7rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  &__item-rating-icons {
+    display: flex;
+    align-items: center;
+
+    > svg {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1.3rem;
+
+      path {
+        fill: $purple;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__item-date {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #62636C;
+  }
+}
+
+@media (max-width: 48em) {
+  .reviews {
+    margin-bottom: 12rem;
+
+    &__title-block {
+      margin-bottom: 10rem;
+    }
+
+    &__title {
+    }
+
+    &__navigation-block {
+      width: 23.2rem;
+      margin: 0 auto;
+    }
+
+    &__arrow {
+      width: 6.8rem;
+      height: 6.8rem;
+    }
+
+    &__pagination {
+      margin: 0 2rem;
+
+      .swiper-pagination-current {
+        font-size: 3.2rem;
+        line-height: 4rem;
+      }
+
+      .swiper-pagination-total {
+        margin-top: 0.8rem;
+        margin-left: 0.5rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+    }
+
+    &__slider {
+      margin: 0 -4rem 4rem -4rem;
+    }
+
+    &__item {
+      margin-top: 3.4rem;
+      padding: 2rem 3.8rem 3.8rem 3.8rem;
+    }
+
+    &__item-title-block {
+      margin-bottom: 2rem;
+    }
+
+    &__item-image-block {
+      width: 14rem;
+      height: 14rem;
+      margin-right: 1.8rem;
+      margin-top: -3.4rem;
+      border: 1.4rem solid #F6F7FA;
+
+      > svg {
+        width: 6.4rem;
+        height: 6.4rem;
+      }
+    }
+
+    &__item-name-block {
+    }
+
+    &__item-name {
+      margin-bottom: 1.2rem;
+      font-size: 3.4rem;
+      line-height: 2.9rem;
+    }
+
+    &__item-city {
+      font-size: 3.2rem;
+      line-height: 2.9rem;
+      color: #62636C;
+    }
+
+    &__item-text {
+      margin-bottom: 3rem;
+      font-size: 3rem;
+      line-height: 3.2rem;
+    }
+
+    &__item-rating-block {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.3rem;
+    }
+
+    &__item-rating {
+      margin-right: 2.6rem;
+      font-size: 3.4rem;
+      line-height: 3.2rem;
+    }
+
+    &__item-rating-icons {
+      > svg {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-right: 1.6rem;
+      }
+    }
+
+    &__item-date {
+      font-size: 2.8rem;
+      line-height: 3rem;
+    }
+  }
+}
