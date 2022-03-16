@@ -1,0 +1,192 @@
+@import "param";
+
+.intro {
+  position: relative;
+  background: linear-gradient(113.79deg, #F6F7FA 19.84%, #E6EAF4 70.46%);
+
+  &__bg {
+    position: absolute;
+    top: -8.1rem;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 8.1rem);
+    mix-blend-mode: screen;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text-block {
+    width: 70rem;
+  }
+
+  &__sub-title {
+    margin-bottom: 3.1rem;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  &__title {
+    margin-bottom: 6rem;
+    font-weight: 500;
+    font-size: 6rem;
+    line-height: 6.2rem;
+    letter-spacing: 0.01em;
+  }
+
+  &__btn {
+  }
+
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 69rem;
+  }
+
+  &__swiper {
+    flex: none;
+    width: 60rem;
+    height: 60rem;
+    margin-bottom: -7rem;
+  }
+
+  &__image-item {
+    width: 60rem;
+    height: 60rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__navigation-block {
+    flex: none;
+    width: 5.1rem;
+  }
+
+  &__arrow {
+    width: 3.4rem;
+    height: 3.4rem;
+    cursor: pointer;
+
+    path {
+      fill: $default-color;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    width: fit-content;
+    margin: 2.5rem 0;
+
+    .swiper-pagination-current {
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    .swiper-pagination-total {
+      margin-top: 0.9rem;
+      margin-left: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .intro {
+    padding-top: 7.6rem;
+
+    &__bg {
+      top: 0;
+      height: 100%;
+    }
+
+    &__container {
+      flex-direction: column;
+      justify-content: normal;
+      align-items: normal;
+    }
+
+    &__text-block {
+      width: 100%;
+    }
+
+    &__sub-title {
+      margin-bottom: 2.2rem;
+      font-size: 2.8rem;
+      line-height: 3.55rem;
+    }
+
+    &__title {
+      margin-bottom: 5rem;
+      font-size: 6.4rem;
+      line-height: 6.8rem;
+    }
+
+    &__btn {
+    }
+
+    &__slider {
+      width: 61rem;
+    }
+
+    &__swiper {
+      width: 100%;
+      height: 60rem;
+      margin-bottom: -12rem;
+    }
+
+    &__image-item {
+      width: 100%;
+      height: 60rem;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__navigation-block {
+      flex: none;
+      width: 6rem;
+    }
+
+    &__arrow {
+      width: 6rem;
+      height: 6.8rem;
+    }
+
+    &__pagination {
+      margin: 2.8rem 0;
+
+      .swiper-pagination-current {
+        font-size: 3.2rem;
+        line-height: 4rem;
+      }
+
+      .swiper-pagination-total {
+        margin-top: 0.8rem;
+        margin-left: 0.5rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}

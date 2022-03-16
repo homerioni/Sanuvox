@@ -215,7 +215,7 @@
     }
 
     &__item {
-      margin-top: 3.4rem;
+      margin-top: 6rem;
       padding: 2rem 3.8rem 3.8rem 3.8rem;
     }
 
@@ -227,7 +227,7 @@
       width: 14rem;
       height: 14rem;
       margin-right: 1.8rem;
-      margin-top: -3.4rem;
+      margin-top: -6rem;
       border: 1.4rem solid #F6F7FA;
 
       > svg {
@@ -255,6 +255,9 @@
       margin-bottom: 3rem;
       font-size: 3rem;
       line-height: 3.2rem;
+      -ms-line-clamp: 12;
+      -webkit-line-clamp: 12;
+      line-clamp: 12;
     }
 
     &__item-rating-block {
