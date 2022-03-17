@@ -1,0 +1,54 @@
+.article-life {
+  margin-bottom: 18rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    width: 33rem;
+  }
+
+  &__info-block {
+    &:nth-child(n + 2) {
+      margin-top: 4.2rem;
+    }
+  }
+
+  &__info-number {
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.1rem;
+  }
+
+  &__info-text {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #62636C;
+  }
+
+  &__text-block {
+    width: 102rem;
+  }
+
+  &__title {
+    margin-bottom: 4.4rem;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.1rem;
+  }
+
+  &__text {
+    &:nth-child(n + 2) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__list {
+    &:nth-child(n + 2) {
+      margin-top: 2rem;
+    }
+  }
+}

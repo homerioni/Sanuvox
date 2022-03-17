@@ -1,0 +1,55 @@
+@import "../param";
+
+.article-technology {
+  margin-bottom: 13rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image-block {
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--vertical {
+      width: 57.3rem;
+      height: 67.5rem;
+    }
+
+    &--horizontal {
+      width: 72rem;
+      height: 32.8rem;
+    }
+  }
+
+  &__text-block {
+    width: 72rem;
+  }
+
+  &__text-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.1rem;
+  }
+
+  &__text {
+    width: 34.5rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  &__text-image-block {
+  }
+}

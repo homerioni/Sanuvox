@@ -54,6 +54,17 @@
     line-height: 2.6rem;
     color: #62636C;
   }
+
+  &__list {
+    margin-left: 2rem;
+
+    li {
+      list-style-type: disc;
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      color: #62636C;
+    }
+  }
 }
 
 @media (max-width: 48em) {
