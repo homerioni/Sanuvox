@@ -307,6 +307,173 @@ input[type=number] {
     line-height: 3.7rem;
   }
 }
+.header {
+  position: relative;
+  z-index: 2;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+}
+.header__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 8.1rem;
+}
+.header__logo {
+  width: 26.6rem;
+  height: 4.9rem;
+}
+.header__logo > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header__store-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.header__store-btn > svg {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.8rem;
+}
+.header__store-btn > svg path {
+  stroke: #6F7385;
+}
+.header__top-link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35.1rem;
+}
+.header__top-link-item {
+  font-size: 1.7rem;
+  line-height: 2.15rem;
+}
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15.9rem;
+}
+.header__icon-btn > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.header__icon-btn > svg path {
+  fill: #6F7385;
+}
+.header__bottom-link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.header__bottom-item {
+  font-size: 1.7rem;
+  line-height: 2.15rem;
+  cursor: pointer;
+}
+.header__bottom-item--other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__bottom-item--other > svg {
+  width: 1.2rem;
+  height: 0.7rem;
+  margin-left: 0.7rem;
+}
+.header__bottom-item--other > svg path {
+  fill: #6F7385;
+}
+
+@media (max-width: 48em) {
+  .header {
+    border-bottom: none;
+  }
+  .header__block {
+    min-height: 15.6rem;
+  }
+  .header__block--bottom {
+    display: none;
+  }
+  .header__logo {
+    width: 26rem;
+    height: 4.8rem;
+  }
+  .header__store-btn {
+    display: none;
+  }
+  .header__top-link-list {
+    display: none;
+  }
+  .header__buttons {
+    width: 21.6rem;
+  }
+  .header__icon-btn > svg {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .header__burger-btn {
+    display: block;
+    height: 3.6rem;
+  }
+  .header__burger-btn > span {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 4.8rem;
+    background-color: #6F7385;
+  }
+  .header__burger-btn > span:before {
+    content: "";
+    position: absolute;
+    top: -1.6rem;
+    left: 0;
+    display: block;
+    width: 4.8rem;
+    height: 2px;
+    background-color: #6F7385;
+  }
+  .header__burger-btn > span:after {
+    content: "";
+    position: absolute;
+    bottom: -1.6rem;
+    left: 0;
+    display: block;
+    width: 4.8rem;
+    height: 2px;
+    background-color: #6F7385;
+  }
+}
 .footer__block--top {
   padding: 9.3rem 0;
   background-color: #E6EAF4;
@@ -469,10 +636,12 @@ input[type=number] {
 .intro {
   position: relative;
   background: linear-gradient(113.79deg, #F6F7FA 19.84%, #E6EAF4 70.46%);
+  margin-top: -8.1rem;
+  padding-top: 8.1rem;
 }
 .intro__bg {
   position: absolute;
-  top: -8.1rem;
+  top: 0;
   left: 0;
   width: 100%;
   height: calc(100% + 8.1rem);
@@ -576,10 +745,14 @@ input[type=number] {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.intro--living {
+  margin-bottom: 12rem;
+}
 
 @media (max-width: 48em) {
   .intro {
     padding-top: 7.6rem;
+    margin-top: 0;
   }
   .intro__bg {
     top: 0;

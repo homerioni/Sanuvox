@@ -120,9 +120,12 @@ const about_intro_slider = new Swiper('.about-intro__slider', {
             loop: true,
             autoplay: {
                 autoplay: true,
-                delay: 5000,
-                disableOnInteraction: true,
             },
         },
+    },
+
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
     },
 });

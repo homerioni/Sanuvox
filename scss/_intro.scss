@@ -3,10 +3,12 @@
 .intro {
   position: relative;
   background: linear-gradient(113.79deg, #F6F7FA 19.84%, #E6EAF4 70.46%);
+  margin-top: -8.1rem;
+  padding-top: 8.1rem;
 
   &__bg {
     position: absolute;
-    top: -8.1rem;
+    top: 0;
     left: 0;
     width: 100%;
     height: calc(100% + 8.1rem);
@@ -106,11 +108,16 @@
       line-height: 2rem;
     }
   }
+
+  &--living {
+    margin-bottom: 12rem;
+  }
 }
 
 @media (max-width: 48em) {
   .intro {
     padding-top: 7.6rem;
+    margin-top: 0;
 
     &__bg {
       top: 0;
