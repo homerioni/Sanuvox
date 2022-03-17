@@ -5,6 +5,7 @@
   background: linear-gradient(113.79deg, #F6F7FA 19.84%, #E6EAF4 70.46%);
   margin-top: -8.1rem;
   padding-top: 8.1rem;
+  margin-bottom: 12rem;
 
   &__bg {
     position: absolute;
@@ -109,8 +110,8 @@
     }
   }
 
-  &--living {
-    margin-bottom: 12rem;
+  &--main {
+    margin-bottom: 0;
   }
 }
 
@@ -194,6 +195,10 @@
         font-size: 1.6rem;
         line-height: 2rem;
       }
+    }
+
+    &--main {
+      margin-bottom: 0;
     }
   }
 }
