@@ -5,6 +5,22 @@
   z-index: 2;
   border-bottom: 2px solid rgba(255, 255, 255, 0.9);
 
+  &--bg-empty {
+    border-bottom: 2px solid #E6EBF5;
+    margin-bottom: 7rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 8.1rem;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #E6EBF5;
+    }
+  }
+
   &__block {
     display: flex;
     justify-content: space-between;

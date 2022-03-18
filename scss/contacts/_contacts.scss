@@ -1,0 +1,96 @@
+@import "../param";
+
+.contacts {
+  margin-bottom: 18rem;
+
+  &__text-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+  }
+
+  &__address-block {
+    width: 60rem;
+  }
+
+  &__block-name {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #62636C;
+  }
+
+  &__address-city {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+
+  &__address {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  &__link-to-map {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: $purple;
+
+    > svg {
+      width: 3.4rem;
+      height: 1.4rem;
+      margin-left: 1.4rem;
+
+      path {
+        fill: $purple;
+      }
+    }
+  }
+
+  &__phone-block {
+    width: 30rem;
+  }
+
+  &__phone {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  &__phone-description {
+    margin-bottom: 6rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  &__work-time {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+
+    b {
+      font-weight: 600;
+      font-size: 2.2rem;
+    }
+  }
+
+  &__email-block {
+  }
+
+  &__email {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  &__map-block {
+    #map {
+      height: 62.1rem;
+    }
+  }
+}

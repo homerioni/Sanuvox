@@ -21,6 +21,11 @@
 @import "about/intro-about-page";
 @import "about/about-article";
 
+@import "contacts/contacts";
+@import "contacts/feedback";
+
+@import "partners/partners";
+
 body.lock {
   overflow: hidden;
 }

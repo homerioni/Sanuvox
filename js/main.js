@@ -14,4 +14,13 @@ $(document).ready(function () {
         });
     });
 
+    // Функция для секции feedback
+    $('.feedback__input').focus(function () {
+        $(this).parent().addClass('focus');
+    }).focusout(function () {
+        if (!$(this).val()) {
+            $(this).parent().removeClass('focus');
+        }
+    });
+
 });
