@@ -39,17 +39,49 @@
 
   &__title {
     margin-bottom: 4rem;
-    font-weight: 500;
-    font-size: 4rem;
-    line-height: 5.1rem;
   }
 
   &__text {
     width: 34.5rem;
-    font-size: 1.8rem;
-    line-height: 2.6rem;
   }
+}
 
-  &__text-image-block {
+@media (max-width: 48em) {
+  .article-technology {
+    margin-bottom: 20rem;
+
+    &__container {
+    }
+
+    &__image-block {
+      &--vertical {
+      }
+
+      &--horizontal {
+        width: calc(100% + 8rem);
+        height: 38.2rem;
+        margin: 0 -4rem;
+      }
+    }
+
+    &__text-block {
+      width: 100%;
+    }
+
+    &__text-content {
+      margin-bottom: 6rem;
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      width: 100%;
+
+      &:nth-child(-n + 2) {
+        margin-bottom: 3rem;
+      }
+    }
   }
 }

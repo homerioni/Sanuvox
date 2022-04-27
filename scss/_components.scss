@@ -89,4 +89,25 @@
       height: 2.4rem;
     }
   }
+
+  .article {
+    &__title {
+      font-size: 6rem;
+      line-height: 6.8rem;
+    }
+
+    &__text {
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__list {
+      margin-left: 3.4rem;
+
+      li {
+        font-size: 3rem;
+        line-height: 3.8rem;
+      }
+    }
+  }
 }

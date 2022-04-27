@@ -1,7 +1,19 @@
 @import "../param";
 
 .info-cards {
+  position: relative;
   margin-bottom: 18rem;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 40.5rem;
+    z-index: -1;
+    width: 100%;
+    height: 123.8rem;
+    background-color: #E6EAF4;
+  }
 
   &__title {
     width: 64rem;
