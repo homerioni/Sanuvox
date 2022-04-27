@@ -43,3 +43,35 @@
     }
   }
 }
+
+@media (max-width: 48em) {
+  .article-why-you {
+    margin-bottom: 20rem;
+
+    &__container {
+      display: block;
+    }
+
+    &__text-container {
+      width: 100%;
+    }
+
+    &__text-block {
+      margin-bottom: 10rem;
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      margin-bottom: 3rem;
+    }
+
+    &__image-container {
+    }
+
+    &__image-block {
+    }
+  }
+}

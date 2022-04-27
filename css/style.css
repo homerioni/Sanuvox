@@ -1920,13 +1920,35 @@ body {
   margin-bottom: 5rem;
 }
 
+@media (max-width: 48em) {
+  .article-why-you {
+    margin-bottom: 20rem;
+  }
+  .article-why-you__container {
+    display: block;
+  }
+  .article-why-you__text-container {
+    width: 100%;
+  }
+  .article-why-you__text-block {
+    margin-bottom: 10rem;
+  }
+  .article-why-you__title {
+    margin-bottom: 3rem;
+  }
+  .article-why-you__text {
+    margin-bottom: 3rem;
+  }
+}
 .list-features {
   margin-bottom: 18rem;
 }
-.list-features--left .list-features__image-block {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+@media (min-width: 48.01em) {
+  .list-features--left .list-features__image-block {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 .list-features__container {
   display: -webkit-box;
@@ -1967,6 +1989,35 @@ body {
   margin-left: 2.5rem;
 }
 
+@media (max-width: 48em) {
+  .list-features {
+    margin-bottom: 18rem;
+  }
+  .list-features__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    width: 100%;
+  }
+  .list-features__image-block {
+    width: 100%;
+    height: 48rem;
+    margin-bottom: 6rem;
+  }
+  .list-features__text-block {
+    width: 62rem;
+  }
+  .list-features__title {
+    margin-bottom: 6rem;
+  }
+  .list-features__list-item {
+    margin-left: 3.5rem;
+  }
+}
 .article-technology {
   margin-bottom: 13rem;
 }
