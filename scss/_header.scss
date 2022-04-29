@@ -123,6 +123,14 @@
   .header {
     border-bottom: none;
 
+    &--bg-empty {
+      border-bottom: 2px solid #E6EBF5;
+
+      &:before {
+        content: none;
+      }
+    }
+
     &__block {
       min-height: 15.6rem;
 

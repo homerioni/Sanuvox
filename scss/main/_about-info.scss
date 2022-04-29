@@ -152,8 +152,9 @@
     padding-bottom: 9rem;
 
     &:before {
-      height: 100%;
-      margin: 0;
+      width: 100%;
+      height: calc(100% + 68.4rem);
+      margin: -68.4rem 0 0 0;
     }
 
     &:after {
