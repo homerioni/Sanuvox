@@ -3049,6 +3049,23 @@ body {
 .partners {
   margin-bottom: 18rem;
 }
+.partners--slider .partners__title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.partners--slider .partners__item:nth-child(n+5) {
+  margin-top: 0;
+}
+.partners__title-block {
+  margin-bottom: 10rem;
+}
 .partners__sub-title {
   margin-bottom: 2rem;
   font-weight: 500;
@@ -3057,7 +3074,6 @@ body {
   text-align: center;
 }
 .partners__title {
-  margin-bottom: 10rem;
   font-weight: 500;
   font-size: 4.5rem;
   line-height: 5.71rem;
@@ -3075,6 +3091,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 2.5rem;
 }
 .partners__item {
   position: relative;
@@ -3136,6 +3153,11 @@ body {
   text-align: center;
 }
 .partners__btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3147,7 +3169,6 @@ body {
           justify-content: center;
   width: 5rem;
   height: 5rem;
-  margin: 0 auto -2.5rem auto;
   border-radius: 100%;
   background-color: #9661B0;
 }
@@ -3163,6 +3184,9 @@ body {
   .partners {
     margin-bottom: 20rem;
   }
+  .partners--slider .partners__item:nth-child(n+2) {
+    margin-top: 0;
+  }
   .partners__sub-title {
     font-size: 2.8rem;
     line-height: 3.6rem;
@@ -3170,10 +3194,14 @@ body {
   .partners__title {
     margin-bottom: 8rem;
   }
+  .partners__cards {
+    margin-bottom: 6rem;
+    padding-bottom: 5.8rem;
+  }
   .partners__item {
     width: 100%;
     margin-right: 0;
-    padding: 0 7.5rem;
+    padding: 0 7.5rem 5.8rem 7.5rem;
   }
   .partners__item:nth-child(n+2) {
     margin-top: 12rem;
@@ -3207,7 +3235,6 @@ body {
   .partners__btn {
     width: 11.6rem;
     height: 11.6rem;
-    margin-bottom: -5.8rem;
   }
   .partners__btn > svg {
     width: 6.8rem;
