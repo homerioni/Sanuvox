@@ -67,6 +67,40 @@
   }
 }
 
+.slider-nav {
+  display: flex;
+  align-items: center;
+
+  &__arrow {
+    width: 3.4rem;
+    height: 3.4rem;
+    cursor: pointer;
+
+    path {
+      fill: $default-color;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 0 3rem;
+
+    .swiper-pagination-current {
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    .swiper-pagination-total {
+      margin-left: 0.5rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}
+
 @media (max-width: 48em) {
   .circle-btn {
     height: 11.6rem;
@@ -107,6 +141,30 @@
       li {
         font-size: 3rem;
         line-height: 3.8rem;
+      }
+    }
+  }
+
+  .slider-nav {
+    justify-content: center;
+
+    &__arrow {
+      width: 6.8rem;
+      height: 3.4rem;
+    }
+
+    &__pagination {
+      margin: 0 2rem;
+
+      .swiper-pagination-current {
+        font-size: 3.2rem;
+        line-height: 4rem;
+      }
+
+      .swiper-pagination-total {
+        margin-left: 0.5rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
       }
     }
   }

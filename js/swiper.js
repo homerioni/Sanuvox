@@ -129,3 +129,42 @@ const about_intro_slider = new Swiper('.about-intro__slider', {
         disableOnInteraction: true,
     },
 });
+
+const projects_slider = new Swiper('.projects__slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: rem(5),
+
+    pagination: {
+        el: '.projects__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+        renderFraction: function (currentClass, totalClass) {
+            return '<div class="' + currentClass + '"></div>' +
+                '<div class="' + totalClass + '"></div>';
+        },
+    },
+
+    navigation: {
+        nextEl: '.projects__arrow-right',
+        prevEl: '.projects__arrow-left',
+    },
+
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+    },
+});

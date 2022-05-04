@@ -6,10 +6,8 @@
 
 @import "main/about-intro";
 @import "main/prod-category";
-@import "food/info-cards";
 @import "main/about-info";
-@import "about/reviews";
-@import "about/video";
+@import "main/projects";
 
 @import "living/article-why-you";
 @import "living/list-features";
@@ -17,9 +15,12 @@
 @import "food/article-technology";
 @import "food/article-life";
 @import "food/article-advantages";
+@import "food/info-cards";
 
 @import "about/intro-about-page";
 @import "about/about-article";
+@import "about/reviews";
+@import "about/video";
 
 @import "contacts/contacts";
 @import "contacts/feedback";
