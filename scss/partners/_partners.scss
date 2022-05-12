@@ -126,9 +126,17 @@
     margin-bottom: 20rem;
 
     &--slider {
+      .partners__title-block {
+        justify-content: center;
+      }
+
       .partners__item:nth-child(n + 2) {
         margin-top: 0;
       }
+    }
+
+    &__title-block {
+      margin-bottom: 8rem;
     }
 
     &__sub-title {
@@ -137,7 +145,6 @@
     }
 
     &__title {
-      margin-bottom: 8rem;
     }
 
     &__cards {

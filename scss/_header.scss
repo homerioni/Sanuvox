@@ -35,6 +35,7 @@
   }
 
   &__logo {
+    display: block;
     width: 26.6rem;
     height: 4.9rem;
 
@@ -50,6 +51,7 @@
     align-items: center;
     font-weight: bold;
     font-size: 1.7rem;
+    cursor: pointer;
 
     > svg {
       width: 3rem;
@@ -117,6 +119,121 @@
       }
     }
   }
+
+  &__store {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 8.1rem;
+    width: 100%;
+    height: 100vh;
+    border-top: 2px #E6EBF5 solid;
+    background-color: #fff;
+  }
+
+  &__store-list {
+    width: 39.4rem;
+    padding-top: 3rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 62rem;
+      height: 100vh;
+      background-color: #F6F7FA;
+    }
+  }
+
+  &__store-list-item {
+    width: 100%;
+    height: 4.9rem;
+    margin-left: -2.9rem;
+
+    &:hover {
+      > div {
+        background-color: #fff;
+        color: $purple;
+
+        > svg {
+          opacity: 1;
+        }
+      }
+
+      > ul {
+        display: flex;
+      }
+    }
+  }
+
+  &__store-list-item-name {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 1.2rem 1.6rem 1.2rem 2.9rem;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    cursor: pointer;
+
+    > svg {
+      width: 3.4rem;
+      height: 1.1rem;
+      opacity: 0;
+
+      path {
+        fill: $purple;
+      }
+    }
+  }
+
+  &__store-sub-list {
+    display: none;
+    position: absolute;
+    left: 62rem;
+    top: 0;
+    flex-wrap: wrap;
+    width: 105rem;
+    padding: 4.3rem 0 0 6.5rem;
+    overflow-y: scroll;
+  }
+
+  &__store-sub-list-item {
+    width: 29rem;
+    margin-right: 5.5rem;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 5rem;
+    }
+
+    > ul {
+      > li {
+        display: block;
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+
+        &:nth-child(n + 2) {
+          margin-top: 1.6rem;
+        }
+      }
+    }
+  }
+
+  &__store-sub-list-item-name {
+    display: block;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
 }
 
 @media (max-width: 48em) {
@@ -131,14 +248,39 @@
       }
     }
 
+    &__container-menu {
+      position: absolute;
+      left: 0;
+      top: 15.6rem;
+      z-index: 15;
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 8rem);
+      overflow-y: scroll;
+      background: linear-gradient(113.79deg, #F6F7FA 19.84%, #E6EAF4 70.46%);
+    }
+
     &__block {
-      min-height: 15.6rem;
+      position: relative;
 
       &--top {
+        flex: none;
+        display: block;
+        margin: 0 -4rem;
+        padding: 6rem 4rem;
+        border-top: 2px solid #E6EBF5;
+        background: #fff;
       }
 
       &--bottom {
-        display: none;
+        flex: auto;
+        display: block;
+        margin: 0 -4rem;
+        padding: 6rem 4rem;
+      }
+
+      &--mobile {
+        min-height: 15.6rem;
       }
     }
 
@@ -148,14 +290,28 @@
     }
 
     &__store-btn {
-      display: none;
+      margin-bottom: 6rem;
+      font-size: 3.4rem;
+
+      > svg {
+        width: 6rem;
+        height: 6rem;
+        margin-right: 1.6rem;
+      }
     }
 
     &__top-link-list {
-      display: none;
+      display: block;
+      width: 100%;
     }
 
     &__top-link-item {
+      font-size: 3.4rem;
+      line-height: 4.3rem;
+
+      &:nth-child(n + 2) {
+        margin-top: 5rem;
+      }
     }
 
     &__buttons {
@@ -182,32 +338,174 @@
 
         &:before {
           content: '';
-          position: absolute;
-          top: -1.6rem;
-          left: 0;
+          transform: translateY(-1.6rem);
           display: block;
           width: 4.8rem;
           height: 2px;
           background-color: #6F7385;
+          transition: transform 0.3s ease;
         }
 
         &:after {
           content: '';
-          position: absolute;
-          bottom: -1.6rem;
-          left: 0;
+          transform: translateY(1.3rem);
           display: block;
           width: 4.8rem;
           height: 2px;
           background-color: #6F7385;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      &.open {
+        > span {
+          height: 0;
+
+          &:before {
+            transform: rotate(45deg);
+          }
+
+          &:after {
+            transform: translateY(-2px) rotate(-45deg);
+          }
         }
       }
     }
 
     &__bottom-link-list {
+      display: block;
     }
 
     &__bottom-item {
+      font-size: 3.4rem;
+      line-height: 4.3rem;
+
+      &:nth-child(n + 2) {
+        margin-top: 6rem;
+      }
+
+      &:last-child {
+        padding-bottom: 6rem;
+      }
+
+      &--other {
+        > span,
+        > svg {
+          display: none;
+        }
+      }
+    }
+
+    &__store {
+      top: 15.6rem;
+      z-index: 20;
+      padding-bottom: 20rem;
+      overflow-y: scroll;
+    }
+
+    &__store-list {
+      width: 100%;
+      padding-top: 0;
+
+      &:before {
+        content: none;
+      }
+    }
+
+    &__store-back-btn {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      margin: 10rem 0;
+      font-size: 3.2rem;
+      cursor: pointer;
+
+      > svg {
+        width: 2.8rem;
+        height: 2.4rem;
+        margin-right: 2.4rem;
+
+        path {
+          stroke: #2B2E34;
+        }
+      }
+    }
+
+    &__store-list-item {
+      width: 100%;
+      height: auto;
+      padding: 4.6rem 0 4rem 0;
+      margin-left: 0;
+
+      &:nth-child(n + 3) {
+        border-top: 2px solid rgba(230, 235, 245, 1);
+      }
+
+      &:hover {
+        > div {
+          > svg {
+            transform: scaleY(-1);
+
+            path {
+              fill: $purple;
+            }
+          }
+        }
+
+        > ul {
+          display: block;
+        }
+      }
+    }
+
+    &__store-list-item-name {
+      padding: 0;
+      font-weight: 500;
+      font-size: 3.4rem;
+      line-height: 4.3rem;
+
+      > svg {
+        width: 2rem;
+        height: 4.2rem;
+        opacity: 1;
+        transition: transform 0.3s ease;
+
+        path {
+          fill: #6F7385;
+        }
+      }
+    }
+
+    &__store-sub-list {
+      position: static;
+      width: 100%;
+      padding: 6rem 0 4rem 0;
+    }
+
+    &__store-sub-list-item {
+      width: 100%;
+      margin: 0;
+
+      &:nth-child(n + 2) {
+        margin: 8rem 0 0 0;
+      }
+
+      > ul {
+        > li {
+          font-size: 2.8rem;
+          line-height: 3.55rem;
+
+          &:nth-child(n + 2) {
+            margin-top: 3.4rem;
+          }
+        }
+      }
+    }
+
+    &__store-sub-list-item-name {
+      margin-bottom: 4rem;
+      font-size: 3.6rem;
+      line-height: 4rem;
     }
   }
 }

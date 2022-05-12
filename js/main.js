@@ -23,4 +23,40 @@ $(document).ready(function () {
         }
     });
 
+    // Store button
+    $('.header__store-btn').click(function () {
+        if ($(window).width() > 768) {
+            $('.header__store').slideToggle();
+            $('body').toggleClass('lock');
+        } else {
+            $('.header__store').slideDown();
+        }
+    });
+    $('.header__store-back-btn').click(function () {
+        $('.header__store').slideUp();
+    });
+
+    // Burger menu
+    if($(window).width() <= 768) {
+        $('.header__container-menu').hide();
+    }
+    $('.header__burger-btn').click(function () {
+        $(this).toggleClass('open');
+        $('.header__container-menu').slideToggle();
+        $('body').toggleClass('lock');
+        $('.header__store').slideUp();
+    });
+
+    // Search
+    $('.header__search-btn').click(function () {
+        $('.search').slideDown();
+        setTimeout(function () {
+            $('.search__input').focus();
+        }, 300);
+    });
+    $('.search__close').click(function () {
+        $('.search').hide();
+        $('.search__input').val('');
+    });
+
 });
