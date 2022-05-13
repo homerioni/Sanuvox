@@ -224,3 +224,43 @@ const partners_slider = new Swiper('.partners__cards', {
         disableOnInteraction: true,
     },
 });
+
+const product_intro_slider = new Swiper('.product-intro__image-block .swiper', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: true,
+
+    pagination: {
+        el: '.product-intro__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+        renderFraction: function (currentClass, totalClass) {
+            return '<div class="' + currentClass + '"></div>' +
+                '<div class="' + totalClass + '"></div>';
+        },
+    },
+
+    navigation: {
+        nextEl: '.product-intro__arrow-right',
+        prevEl: '.product-intro__arrow-left',
+    },
+
+    autoplay: {
+        autoplay: true,
+        delay: 5000,
+        disableOnInteraction: true,
+    },
+});

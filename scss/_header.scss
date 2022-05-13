@@ -7,7 +7,7 @@
 
   &--bg-empty {
     border-bottom: 2px solid #E6EBF5;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 
     &:before {
       content: '';
@@ -19,6 +19,26 @@
       height: 2px;
       background-color: #E6EBF5;
     }
+  }
+
+  &--bg-gray {
+    margin-bottom: 5rem;
+    background-color: #fff;
+
+    .header__block--bottom {
+      position: relative;
+    }
+  }
+
+  &__bottom-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100%;
+    margin-left: -25.5rem;
+    background: linear-gradient(113.79deg, #F6F7FA 19.84%, #E6EAF4 70.46%);
   }
 
   &__block {
@@ -332,6 +352,10 @@
       }
     }
 
+    &--bg-gray {
+      border-bottom: 2px solid #E6EBF5;
+    }
+
     &__container-menu {
       position: absolute;
       left: 0;
@@ -412,6 +436,7 @@
     &__burger-btn {
       display: block;
       height: 3.6rem;
+      margin-bottom: 1rem;
 
       > span {
         position: relative;
