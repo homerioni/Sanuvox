@@ -1,0 +1,86 @@
+@import "param";
+
+.modal-video {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(116, 116, 116, 0.4);
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    width: 139.7rem;
+    padding: 8.5rem;
+    background-color: #fff;
+  }
+
+  &__close {
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+
+    path {
+      stroke: $default-color;
+    }
+  }
+
+  &__title {
+    margin-bottom: 6.5rem;
+    font-weight: 500;
+    font-size: 4.5rem;
+    line-height: 5.7rem;
+  }
+
+  &__video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 122.7rem;
+    height: 61.1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__play-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.8rem;
+    height: 7.8rem;
+    border-radius: 100%;
+    border: 1rem solid $purple;
+    background-color: #fff;
+    margin: -3.9rem auto -2.3rem auto;
+
+    > svg {
+      width: 1.2rem;
+      height: 1.9rem;
+      margin-left: 0.5rem;
+
+      path {
+        fill: $default-color;
+      }
+    }
+  }
+}

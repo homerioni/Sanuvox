@@ -3,6 +3,16 @@
 .video {
   margin-bottom: 18rem;
 
+  &--page {
+    margin-bottom: 9rem;
+
+    .video__title-block {
+      display: block;
+      margin-bottom: 10rem;
+      text-align: center;
+    }
+  }
+
   &__title-block {
     display: flex;
     justify-content: space-between;
@@ -12,6 +22,13 @@
 
   &__title {
     @include title-font;
+  }
+
+  &__sub-title {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   &__btn {
@@ -99,11 +116,25 @@
   .video {
     margin-bottom: 20rem;
 
+    &--page {
+      margin-bottom: 6rem;
+
+      .video__title-block {
+        margin-bottom: 7rem;
+        text-align: left;
+      }
+    }
+
     &__title-block {
       margin-bottom: 7rem;
     }
 
     &__title {
+    }
+
+    &__sub-title {
+      font-size: 2.8rem;
+      line-height: 3.55rem;
     }
 
     &__btn {

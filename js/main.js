@@ -59,4 +59,18 @@ $(document).ready(function () {
         $('.search__input').val('');
     });
 
+    // Modal video
+    $('.modal-video').css('display', 'flex').hide();
+    $('.video__play-btn').click(function () {
+        let img = $(this).parent().find('.video__preview img').attr('src');
+        $('.modal-video__video').css('background-image', 'url("' + img + '")')
+        $('.modal-video').fadeIn('fast');
+    });
+    $('.modal-video__close').click(function () {
+        $('.modal-video').fadeOut();
+    });
+    $('.modal-video__bg').click(function () {
+        $('.modal-video').fadeOut();
+    });
+
 });
