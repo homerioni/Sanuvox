@@ -82,4 +82,17 @@ $(document).ready(function () {
         $(content).fadeIn();
     });
 
+    // cart shop
+    $('.cart__qty-operand--minus').click(function () {
+        let input = $(this).parent().find('input'),
+            value = Number(input.val());
+        if (value > 1) {
+            input.val(value - 1);
+        }
+    });
+    $('.cart__qty-operand--plus').click(function () {
+        let input = $(this).parent().find('input'),
+            value = Number(input.val());
+        input.val(value + 1);
+    });
 });
