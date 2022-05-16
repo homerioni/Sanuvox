@@ -81,6 +81,7 @@
     line-height: 2.6rem;
     border: 2px solid rgba(230, 234, 244, 0);
     transition: 0.2s ease;
+    resize: none;
 
     &:focus {
       border: 2px solid rgba(230, 234, 244, 1);

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="another website">
-    <title>Контакты</title>
+    <title>Корзина</title>
 
     <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -352,74 +352,206 @@
         </div>
     </div>
 </div>
+<div class="page-navigation desktop">
+    <div class="container page-navigation__container">
+        <a href="#" class="page-navigation__page page-navigation__page--old">Главная</a>
+        <div class="page-navigation__page page-navigation__page--current">Оформление заказа</div>
+    </div>
+</div>
 
 <main>
-    <section class="contacts">
-        <div class="container contacts__container">
-            <div class="contacts__address-block">
-                <div class="contacts__block-name">Адрес</div>
-                <div class="contacts__address-city">МОСКВА</div>
-                <div class="contacts__address">109052, ул. Нижегородская, д. 50</div>
-                <a href="#" class="contacts__link-to-map">
-                    <span>Посмотреть на карте</span>
-                    <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z" />
-                    </svg>
-                </a>
-            </div>
-            <div class="contacts__phone-block">
-                <div class="contacts__block-name">Номер телефона</div>
-                <div class="contacts__phone">+7 (495) 003-8869</div>
-                <div class="contacts__phone-description">Ответим на вопросы оперативно</div>
-                <div class="contacts__work-time desktop">
-                    <b>10:00 — 19:00 </b>
-                    <span>Пн.-пт.</span>
-                </div>
-            </div>
-            <div class="contacts__email-block">
-                <div class="contacts__block-name">Электронная почта</div>
-                <div class="contacts__email">info@sanuvox.ru</div>
-            </div>
-            <div class="contacts__work-time mobile">
-                <div class="contacts__block-name">Время работы</div>
-                <b>10:00 — 19:00 </b>
-                <span>Пн.-пт.</span>
-            </div>
-            <div class="contacts__map-block">
-                <div id="map"></div>
-            </div>
-        </div>
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=c9e39c09-0f62-4828-b0ce-7ca99a606b15&lang=ru_RU" type="text/javascript"></script>
-        <script src="js/map.js"></script>
-    </section>
-    <section class="feedback">
+    <section class="order">
         <div class="container">
-            <div class="feedback__title">Обратная связь</div>
-            <div class="feedback__description">
-                Оставьте заявку, и мы свяжемся с вами в течение 1 рабочего дня
-            </div>
-            <form class="feedback__form">
-                <label class="feedback__label-input feedback__label-input--name">
-                    <input type="text" class="feedback__input">
-                </label>
-                <label class="feedback__label-input feedback__label-input--phone">
-                    <input type="tel" class="feedback__input">
-                </label>
-                <label class="feedback__label-input feedback__label-input--email">
-                    <input type="email" class="feedback__input">
-                </label>
-                <label class="feedback__label-input feedback__label-input--company">
-                    <input type="text" class="feedback__input">
-                </label>
-                <label class="feedback__label-textarea">
-                    <textarea class="feedback__input"></textarea>
-                </label>
-                <button type="submit" class="feedback__btn circle-btn circle-btn--gray">
-                    <span class="circle-btn__text">Оставить заявку</span>
-                    <svg class="circle-btn__arrow" viewBox="0 0 34 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M28.9589 0.958984L27.4444 2.47352L29.9 4.92907H0V7.07096H29.9L27.4444 9.52658L28.9589 11.0411L34 6.00001L28.9589 0.958984Z" />
-                    </svg>
-                </button>
+            <h1 class="order__title">Оформление заказа</h1>
+            <form class="order__form">
+                <div class="order__item">
+                    <div class="order__item-title-block">
+                        <h2 class="order__item-title">Состав заказа</h2>
+                        <a href="#" class="order__btn-edit">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.586 2.58557C12.9611 2.21063 13.4697 2 14 2C14.5303 2 15.0389 2.21063 15.414 2.58557L18 5.17157C18.3749 5.54663 18.5856 6.05524 18.5856 6.58557C18.5856 7.1159 18.3749 7.62452 18 7.99957L16.414 9.58557L11 4.17157L12.586 2.58557ZM9.586 5.58557L0.586 14.5856C0.210901 14.9606 0.000113275 15.4692 0 15.9996V18.5856C0 19.116 0.210714 19.6247 0.585786 19.9998C0.960859 20.3749 1.46957 20.5856 2 20.5856H4.586C5.11639 20.5855 5.62501 20.3747 6 19.9996L15 10.9996L9.586 5.58557Z"/><path d="M13 20H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="order__list">
+                        <li class="order__list-item">
+                            <span>YMC² Magnetic Bearing Centrifugal Chiller</span>
+                            <span class="order__list-item--after-text">1 шт х 61 990 ₽</span>
+                        </li>
+                        <li class="order__list-item">
+                            <span>Samsung Galaxy S21 FE 6/128GB (графитовый) </span>
+                            <span class="order__list-item--after-text">1 шт х 1 990 ₽</span>
+                        </li>
+                        <li class="order__list-item">
+                            <span>YMC² Magnetic Bearing</span>
+                            <span class="order__list-item--after-text">1 шт х 990 ₽</span>
+                        </li>
+                    </ul>
+                    <div class="order__total-block order__total-block--first-block">
+                        <div class="order__total-title">Итоговая стоимость</div>
+                        <div class="order__total-price">9 600</div>
+                    </div>
+                </div>
+                <div class="order__item">
+                    <div class="order__edit-content" style="display: block">
+                        <h2 class="order__item-title">Укажите покупателя</h2>
+                        <div class="order__inputs-block">
+                            <label class="order__label order__label--input">
+                                <span class="order__input-name">Ф.И.О.</span>
+                                <input type="text" class="order__input">
+                            </label>
+                            <label class="order__label order__label--input">
+                                <span class="order__input-name">E-mail</span>
+                                <input type="email" class="order__input">
+                            </label>
+                            <label class="order__label order__label--input">
+                                <span class="order__input-name">Телефон</span>
+                                <input type="tel" class="order__input">
+                            </label>
+                            <button type="button" class="order__btn-next" step="2">
+                                <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
+                                </svg>
+                                <span>Продолжить</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="order__text-content">
+                        <div class="order__item-title-block">
+                            <h2 class="order__item-title">Получатель</h2>
+                            <button type="button" class="order__btn-edit" step="2">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.586 2.58557C12.9611 2.21063 13.4697 2 14 2C14.5303 2 15.0389 2.21063 15.414 2.58557L18 5.17157C18.3749 5.54663 18.5856 6.05524 18.5856 6.58557C18.5856 7.1159 18.3749 7.62452 18 7.99957L16.414 9.58557L11 4.17157L12.586 2.58557ZM9.586 5.58557L0.586 14.5856C0.210901 14.9606 0.000113275 15.4692 0 15.9996V18.5856C0 19.116 0.210714 19.6247 0.585786 19.9998C0.960859 20.3749 1.46957 20.5856 2 20.5856H4.586C5.11639 20.5855 5.62501 20.3747 6 19.9996L15 10.9996L9.586 5.58557Z"/><path d="M13 20H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="order__list">
+                            <li class="order__list-item">
+                                <span>Петрова Александра Ивановна</span>
+                            </li>
+                            <li class="order__list-item">
+                                <span>+7 (000) 999-99-99</span>
+                            </li>
+                            <li class="order__list-item">
+                                <span>testmail@mail.ru</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order__item">
+                    <div class="order__item-title order__item-title--name-block">2. Способ получения заказа</div>
+                    <div class="order__edit-content">
+                        <h2 class="order__item-title">Способ получения заказа</h2>
+                        <div class="order__radio-buttons">
+                            <label class="order__label order__label--radio active">
+                                <input type="radio" name="delivery" checked>
+                                <span class="order__radio-title-block">
+                                    <span class="order__radio-title">Самовывоз</span>
+                                    <span class="order__radio-sub-title">Сегодня бесплатно</span>
+                                </span>
+                                <span class="order__radio-icon"></span>
+                            </label>
+                            <label class="order__label order__label--radio">
+                                <input type="radio" name="delivery">
+                                <span class="order__radio-title-block">
+                                    <span class="order__radio-title">Оформить доставку</span>
+                                    <span class="order__radio-sub-title">Бесплатно от 20 000₽</span>
+                                </span>
+                                <span class="order__radio-icon"></span>
+                            </label>
+                        </div>
+                        <a href="#" class="order__map-link">
+                            <span>Посмотреть на карте</span>
+                            <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
+                            </svg>
+                        </a>
+                        <div class="order__map-block">
+                            <div id="map"></div>
+                            <div class="order__contacts">
+                                <div class="order__contacts-block">
+                                    <div class="order__contacts-block-name">Адрес</div>
+                                    <div class="order__contacts-text">109052, Москва, ул. Нижегородская, д. 50  </div>
+                                </div>
+                                <div class="order__contacts-block">
+                                    <div class="order__contacts-block-name">Номер телефона</div>
+                                    <div class="order__contacts-text">+7 (495) 003-8869</div>
+                                </div>
+                                <div class="order__contacts-block">
+                                    <div class="order__contacts-block-name">Время работы</div>
+                                    <div class="order__contacts-text">
+                                        <b>10:00 — 19:00 </b>
+                                        <span class="order__contacts-text--normal">Пн.-пт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="order__btn-next" step="3">
+                            <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
+                            </svg>
+                            <span>Продолжить</span>
+                        </button>
+
+                        <script src="https://api-maps.yandex.ru/2.1/?apikey=c9e39c09-0f62-4828-b0ce-7ca99a606b15&lang=ru_RU" type="text/javascript"></script>
+                        <script src="js/map.js"></script>
+                    </div>
+                    <div class="order__text-content">
+                        <div class="order__item-title-block">
+                            <h2 class="order__item-title">Самовывоз из магазина</h2>
+                            <button type="button" class="order__btn-edit" step="3">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.586 2.58557C12.9611 2.21063 13.4697 2 14 2C14.5303 2 15.0389 2.21063 15.414 2.58557L18 5.17157C18.3749 5.54663 18.5856 6.05524 18.5856 6.58557C18.5856 7.1159 18.3749 7.62452 18 7.99957L16.414 9.58557L11 4.17157L12.586 2.58557ZM9.586 5.58557L0.586 14.5856C0.210901 14.9606 0.000113275 15.4692 0 15.9996V18.5856C0 19.116 0.210714 19.6247 0.585786 19.9998C0.960859 20.3749 1.46957 20.5856 2 20.5856H4.586C5.11639 20.5855 5.62501 20.3747 6 19.9996L15 10.9996L9.586 5.58557Z"/><path d="M13 20H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="order__list">
+                            <li class="order__list-item">
+                                <span>109052, Москва, ул. Нижегородская, д. 50  </span>
+                            </li>
+                            <li class="order__list-item">
+                                <span>Бесплатно, 29 апреля (пт), с 14:30</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order__item order__item--last">
+                    <div class="order__item-title order__item-title--name-block">3. Способ оплаты</div>
+                    <div class="order__edit-content">
+                        <h2 class="order__item-title">Способ получения заказа</h2>
+                        <div class="order__radio-buttons">
+                            <label class="order__label order__label--radio active">
+                                <input type="radio" name="pay" checked>
+                                <span class="order__radio-title-block">
+                                    <span class="order__radio-title">Онлайн</span>
+                                    <span class="order__radio-sub-title">VISA, MASTERCARD, МИР</span>
+                                </span>
+                                <span class="order__radio-icon"></span>
+                            </label>
+                            <label class="order__label order__label--radio">
+                                <input type="radio" name="pay">
+                                <span class="order__radio-title-block">
+                                    <span class="order__radio-title">При получении</span>
+                                    <span class="order__radio-sub-title">Наличными, картой, по СМС</span>
+                                </span>
+                                <span class="order__radio-icon"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="order__submit-block">
+                        <div class="order__total-block">
+                            <div class="order__total-title">Итоговая стоимость</div>
+                            <div class="order__total-price">9 600</div>
+                        </div>
+                        <button type="button" class="order__btn-next">
+                            <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
+                            </svg>
+                            <span class="desktop">Подтвердить заказ</span>
+                            <span class="mobile">Подтвердить</span>
+                        </button>
+                    </div>
+                </div>
             </form>
         </div>
     </section>

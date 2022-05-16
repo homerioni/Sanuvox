@@ -1,0 +1,621 @@
+@import "../param";
+
+.order {
+  margin-bottom: 18rem;
+
+  &__title {
+    margin-bottom: 7.5rem;
+    @include title-font;
+  }
+
+  &__form {
+  }
+
+  &__item {
+    padding: 4.5rem;
+    background-color: #fff;
+    box-shadow: 1.5rem 2rem 10rem 0 rgba(218, 221, 231, 0.6);
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &--last {
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+
+      .order__edit-content {
+        padding: 4.5rem;
+        margin-bottom: 4rem;
+        background-color: #fff;
+        box-shadow: 1.5rem 2rem 10rem 0 rgba(218, 221, 231, 0.6);
+      }
+
+      .order__item-title--name-block {
+        padding: 4.5rem;
+        background-color: #fff;
+        box-shadow: 1.5rem 2rem 10rem 0 rgba(218, 221, 231, 0.6);
+      }
+    }
+  }
+
+  &__item-title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.5rem;
+
+    .order__item-title {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3rem;
+
+    &--name-block {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 100%;
+    background-color: #E6EAF4;
+
+    > svg {
+      width: 2.4rem;
+      height: 2.4rem;
+
+      path {
+        &:first-child {
+          fill: $purple;
+        }
+
+        &:last-child {
+          stroke: $purple;
+        }
+      }
+    }
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &--after-text {
+      margin-left: 1.5rem;
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      color: #7B7F8E;
+    }
+  }
+
+  &__total-block {
+    &--first-block {
+      margin-top: 7rem;
+    }
+  }
+
+  &__total-title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #7B7F8E;
+  }
+
+  &__total-price {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3rem;
+
+    &:after {
+      content: '₽';
+      margin-left: 0.8rem;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  &__edit-content {
+    display: none;
+  }
+
+  &__inputs-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  &__label {
+    cursor: pointer;
+
+    &--input {
+      width: 30rem;
+      margin-right: 4rem;
+    }
+
+    &--radio {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 63rem;
+      height: 13rem;
+      padding: 3.5rem 3rem;
+      border: 1px solid rgba(123, 127, 142, 1);
+
+      > input {
+        display: none;
+      }
+
+      &.active {
+        border: none;
+        background-color: #E6EAF4;
+
+        .order__radio-icon {
+          background-color: $purple;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: 100%;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+
+  &__input-name {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #7B7F8E;
+  }
+
+  &__input {
+    width: 100%;
+    height: 3.9rem;
+    padding: 0.7rem 0;
+
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+
+    border-bottom: 1px solid rgba(123, 127, 142, 0.6);
+
+    &:focus {
+      border-bottom: 1px solid $purple;
+    }
+  }
+
+  &__btn-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27.5rem;
+    height: 8.5rem;
+    background-color: $purple;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: white;
+
+    > svg {
+      width: 3.4rem;
+      height: 1.1rem;
+      margin-right: 2rem;
+
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  &__text-content {
+    display: none;
+  }
+
+  &__radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &:nth-child(n + 3) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__radio-title-block {
+    width: 40rem;
+  }
+
+  &__radio-title {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+
+  &__radio-sub-title {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #7B7F8E;
+  }
+
+  &__radio-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    border: 2px solid rgba(123, 127, 142, 1);
+  }
+
+  &__map-link {
+    display: flex;
+    align-items: center;
+    margin: 4rem 0 3rem 0;
+
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: $purple;
+
+    > svg {
+      width: 3.4rem;
+      height: 1.1rem;
+      margin-left: 1.4rem;
+
+      path {
+        fill: $purple;
+      }
+    }
+  }
+
+  &__map-block {
+    display: flex;
+    margin-bottom: 4.5rem;
+
+    #map {
+      width: 62.8rem;
+      height: 29.6rem;
+      margin-right: 4.5rem;
+    }
+  }
+
+  &__contacts {
+  }
+
+  &__contacts-block {
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__contacts-block-name {
+    margin-bottom: 1.4rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #62636C;
+  }
+
+  &__contacts-text {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+
+    &--normal {
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__submit-block {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5rem;
+    background-color: #fff;
+    box-shadow: 1.5rem 2rem 10rem 0 rgba(218, 221, 231, 0.6);
+  }
+}
+
+@media (max-width: 48em) {
+  .order {
+    margin-bottom: 20rem;
+
+    &__title {
+      margin-bottom: 6rem;
+    }
+
+    &__form {
+    }
+
+    &__item {
+      padding: 5rem;
+
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+
+      &--last {
+        padding: 0;
+
+        .order__edit-content {
+          padding: 5rem;
+          margin-bottom: 6rem;
+        }
+
+        .order__item-title--name-block {
+          padding: 5rem;
+        }
+      }
+    }
+
+    &__item-title-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+    }
+
+    &__item-title {
+      margin-bottom: 6rem;
+      font-size: 3.8rem;
+      line-height: 5.6rem;
+
+      &--name-block {
+        margin-bottom: 0;
+      }
+    }
+
+    &__btn-edit {
+      width: 9rem;
+      height: 9rem;
+
+      > svg {
+        width: 4.8rem;
+        height: 4.8rem;
+      }
+    }
+
+    &__list {
+    }
+
+    &__list-item {
+      font-weight: 500;
+      font-size: 3.4rem;
+      line-height: 4.8rem;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+
+      &--after-text {
+        display: block;
+        margin: 0.8rem 0 0 0;
+        font-size: 2.8rem;
+        line-height: 5.2rem;
+      }
+    }
+
+    &__total-block {
+      display: flex;
+
+      &--first-block {
+        margin-top: 6rem;
+      }
+    }
+
+    &__total-title {
+      margin: 0 3rem 0 0;
+      font-size: 3rem;
+      line-height: 5rem;
+    }
+
+    &__total-price {
+      font-size: 4rem;
+      line-height: 5rem;
+
+      &:after {
+        margin-left: 1rem;
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+    }
+
+    &__edit-content {
+    }
+
+    &__inputs-block {
+      align-items: normal;
+
+      .order__btn-next {
+        margin-top: 7rem;
+      }
+    }
+
+    &__label {
+      &--input {
+        width: 100%;
+        margin: 0;
+
+        &:nth-child(n + 2) {
+          margin-top: 4rem;
+        }
+      }
+
+      &--radio {
+        width: 100%;
+        height: 16rem;
+        padding: 3rem;
+
+        &:not(:last-child) {
+          margin-bottom: 5rem;
+        }
+
+        &.active {
+          .order__radio-icon {
+            &:before {
+              width: 1.8rem;
+              height: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    &__input-name {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+
+    &__input {
+      width: 100%;
+      height: 6.4rem;
+      padding: 1rem 0;
+      font-size: 3rem;
+      line-height: 4.4rem;
+    }
+
+    &__btn-next {
+      width: 100%;
+      height: 10.8rem;
+      font-size: 3.2rem;
+      line-height: 4rem;
+
+      > svg {
+        width: 6.8rem;
+        height: 2.2rem;
+      }
+    }
+
+    &__text-content {
+    }
+
+    &__radio-buttons {
+    }
+
+    &__radio-title-block {
+      width: 44rem;
+    }
+
+    &__radio-title {
+      font-size: 3.4rem;
+      line-height: 5rem;
+    }
+
+    &__radio-sub-title {
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__radio-icon {
+      width: 4.6rem;
+      height: 4.6rem;
+      border: 1px solid rgba(123, 127, 142, 1);
+    }
+
+    &__map-link {
+      margin: 10rem 0 6rem 0;
+      font-size: 3.2rem;
+      line-height: 4.6rem;
+
+      > svg {
+        width: 6.8rem;
+        height: 2.2rem;
+        margin-left: 2.8rem;
+      }
+    }
+
+    &__map-block {
+      display: block;
+      margin-bottom: 7rem;
+
+      #map {
+        width: 100%;
+        height: 50.6rem;
+        margin-bottom: 6rem;
+        margin-right: 0;
+      }
+    }
+
+    &__contacts {
+    }
+
+    &__contacts-block {
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+    }
+
+    &__contacts-block-name {
+      margin-bottom: 1.6rem;
+      font-size: 3rem;
+      line-height: 3.8rem;
+    }
+
+    &__contacts-text {
+      font-size: 4.6rem;
+      line-height: 5.8rem;
+
+      &--normal {
+        font-size: 3.4rem;
+      }
+    }
+
+    &__submit-block {
+      padding: 6rem 5rem 5rem 5rem;
+
+      .order__total-block {
+        display: block;
+        width: 24rem;
+
+        > .order__total-title {
+          margin-right: 0;
+          margin-bottom: 2rem;
+          font-size: 2.2rem;
+          line-height: 2.8rem;
+        }
+
+        > .order__total-price {
+          font-size: 5rem;
+          line-height: 5rem;
+        }
+      }
+
+      .order__btn-next {
+        width: 32rem;
+      }
+    }
+  }
+}

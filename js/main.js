@@ -95,4 +95,57 @@ $(document).ready(function () {
             value = Number(input.val());
         input.val(value + 1);
     });
+
+    // order
+    $('.order__btn-next').click(function () {
+        let item_current,
+            item_next;
+        switch ($(this).attr('step')) {
+            case '2':
+                item_current = $('.order__item:nth-child(2)');
+                item_next = $('.order__item:nth-child(3)');
+                // item_current.find('.order__list').html('');
+                // item_current.find('.order__label').each(function () {
+                //     item_current.find('.order__list').append(
+                //         '<li class="order__list-item">' + $(this).find('input').val() + '</li>'
+                //     );
+                // });
+                item_current.find('.order__edit-content').hide();
+                item_current.find('.order__text-content').show();
+                item_next.find('.order__item-title--name-block').hide();
+                item_next.find('.order__edit-content').show();
+                break
+            case '3':
+                item_current = $('.order__item:nth-child(3)');
+                item_next = $('.order__item:nth-child(4)');
+                item_current.find('.order__edit-content').hide();
+                item_current.find('.order__text-content').show();
+                item_next.find('.order__item-title--name-block').hide();
+                item_next.find('.order__edit-content').show();
+                item_next.find('.order__submit-block').css('display', 'flex');
+                break
+        }
+    });
+    $('.order__btn-edit').click(function () {
+        let item_current,
+            item_next;
+        switch ($(this).attr('step')) {
+            case '2':
+                $('.order__edit-content, .order__text-content, .order__submit-block').hide();
+                $('.order__item-title--name-block, .order__item:nth-child(2) .order__edit-content').show();
+                break
+            case '3':
+                item_current = $('.order__item:nth-child(3)');
+                item_next = $('.order__item:nth-child(4)');
+                item_current.find('.order__edit-content').show();
+                item_current.find('.order__text-content').hide();
+                item_next.find('.order__item-title--name-block').show();
+                item_next.find('.order__edit-content, .order__submit-block').hide();
+                break
+        }
+    });
+    $('.order__label--radio').click(function () {
+        $(this).parent().find('label').removeClass('active');
+        $(this).addClass('active');
+    });
 });
