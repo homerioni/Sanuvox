@@ -264,3 +264,52 @@ const product_intro_slider = new Swiper('.product-intro__image-block .swiper', {
         disableOnInteraction: true,
     },
 });
+
+const related_products_slider = new Swiper('.related-products__cards', {
+    direction: 'horizontal',
+
+    breakpoints: {
+        769: {
+            slidesPerView: 3,
+            spaceBetween: rem(5),
+        },
+        0: {
+            slidesPerView: 1.2,
+            spaceBetween: rem(2),
+        },
+    },
+
+    pagination: {
+        el: '.related-products__pagination',
+        type: 'fraction',
+        formatFractionCurrent: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+        formatFractionTotal: function (number) {
+            if (number < 10) {
+                return '0' + number;
+            } else {
+                return number;
+            }
+        },
+        renderFraction: function (currentClass, totalClass) {
+            return '<div class="' + currentClass + '"></div>' +
+                '<div class="' + totalClass + '"></div>';
+        },
+    },
+
+    navigation: {
+        nextEl: '.related-products__arrow-right',
+        prevEl: '.related-products__arrow-left',
+    },
+
+    autoplay: {
+        autoplay: true,
+        delay: 5000,
+        disableOnInteraction: true,
+    },
+});

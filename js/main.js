@@ -73,4 +73,13 @@ $(document).ready(function () {
         $('.modal-video').fadeOut();
     });
 
+    // Tab content for product-page.html
+    $('.product-description__tab').click(function () {
+        $('.product-description__tab-content').hide();
+        $('.product-description__tab').removeClass('active');
+        $(this).addClass('active');
+        let content = '.' + $(this).attr('id');
+        $(content).fadeIn();
+    });
+
 });
