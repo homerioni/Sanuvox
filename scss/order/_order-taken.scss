@@ -1,0 +1,346 @@
+@import "../param";
+
+.order-taken {
+  margin-bottom: 18rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__check-content {
+    width: 62.4rem;
+    height: fit-content;
+    padding: 8rem 7rem;
+    background-color: #fff;
+    box-shadow: 1.5rem 2rem 10rem 0 rgba(218, 221, 231, 0.6);
+  }
+
+  &__check-title {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  &__check-sub-title {
+    margin-bottom: 5rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #7E838C;
+  }
+
+  &__check-list {
+    margin-bottom: 5rem;
+  }
+
+  &__check-list-item {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #7E838C;
+
+    &--black {
+      display: inline-block;
+      width: 17.5rem;
+      color: $default-color;
+    }
+  }
+
+  &__print-link {
+    display: block;
+    width: fit-content;
+    margin-bottom: 6rem;
+    border-bottom: 1px solid $purple;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: $purple;
+  }
+
+  &__social-title {
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: #7E838C;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    > svg {
+      width: 2.2rem;
+      height: 2.2rem;
+      margin-right: 1rem;
+
+      path {
+        fill: $purple;
+      }
+    }
+  }
+
+  &__order-content {
+    width: 75.5rem;
+    height: fit-content;
+  }
+
+  &__order-title-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  &__order-title {
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+  }
+
+  &__order-qty {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+
+    &--gray {
+      color: #7B7F8E;
+    }
+  }
+
+  &__order-list {
+  }
+
+  &__order-item {
+    display: flex;
+    align-items: center;
+    padding: 3rem 5rem 3rem 3rem;
+    background-color: #fff;
+    box-shadow: 1.5rem 2rem 10rem 0 rgba(218, 221, 231, 0.6);
+
+    &:not(:last-child) {
+      margin-bottom: 1.7rem;
+    }
+  }
+
+  &__img-box {
+    flex: none;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 3rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__order-info-block {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__order-inner {}
+
+  &__order-item-title {
+    width: 36rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  &__price-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__qty {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+
+    &--gray {
+      color: #7B7F8E;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+
+    &:after {
+      content: '₽';
+      margin-left: 0.5rem;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.3rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .order-taken {
+    margin-bottom: 20rem;
+
+    &__content {
+      display: block;
+    }
+
+    &__check-content {
+      width: 100%;
+      padding: 6rem 4rem;
+      margin-bottom: 20rem;
+    }
+
+    &__check-title {
+      font-size: 4.4rem;
+      line-height: 5.6rem;
+    }
+
+    &__check-sub-title {
+      margin-bottom: 6rem;
+      font-size: 2.8rem;
+      line-height: 3.8rem;
+    }
+
+    &__check-list {
+      margin-bottom: 6rem;
+    }
+
+    &__check-list-item {
+      font-size: 2.8rem;
+      line-height: 5rem;
+
+      &--black {
+        width: 30rem;
+        font-weight: 500;
+      }
+    }
+
+    &__print-link {
+      margin-bottom: 8rem;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+
+    &__social-title {
+      margin-bottom: 3.4rem;
+      font-size: 2.8rem;
+      line-height: 3.5rem;
+    }
+
+    &__socials {
+      flex-wrap: wrap;
+
+      &:nth-child(n + 3) {
+        margin-top: 4rem;
+      }
+    }
+
+    &__social-link {
+      font-size: 2.8rem;
+      line-height: 5rem;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+
+      > svg {
+        width: 4.4rem;
+        height: 4.4rem;
+        margin-right: 2rem;
+      }
+    }
+
+    &__order-content {
+      width: 100%;
+    }
+
+    &__order-title-block {
+      align-items: flex-end;
+      margin-bottom: 6rem;
+    }
+
+    &__order-title {
+      font-size: 6.4rem;
+      line-height: 6.8rem;
+    }
+
+    &__order-qty {
+      font-size: 3rem;
+      line-height: 5rem;
+
+      &--gray {
+      }
+    }
+
+    &__order-list {
+    }
+
+    &__order-item {
+      padding: 5rem 5rem 5rem 3rem;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__img-box {
+      width: 14rem;
+      height: 19rem;
+    }
+
+    &__order-info-block {
+      display: block;
+    }
+
+    &__order-inner {}
+
+    &__order-item-title {
+      width: 100%;
+      font-size: 3.4rem;
+      line-height: 4.8rem;
+    }
+
+    &__price-block {
+      width: 100%;
+    }
+
+    &__qty {
+      font-size: 2.4rem;
+      line-height: 5rem;
+
+      &--gray {
+      }
+    }
+
+    &__price {
+      font-size: 4.4rem;
+      line-height: 5rem;
+
+      &:after {
+        margin-left: 0.8rem;
+        font-size: 3rem;
+        line-height: 4rem;
+      }
+    }
+  }
+}

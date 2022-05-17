@@ -360,199 +360,134 @@
 </div>
 
 <main>
-    <section class="order">
+    <section class="order-taken">
         <div class="container">
-            <h1 class="order__title">Оформление заказа</h1>
-            <form class="order__form">
-                <div class="order__item">
-                    <div class="order__item-title-block">
-                        <h2 class="order__item-title">Состав заказа</h2>
-                        <a href="#" class="order__btn-edit">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.586 2.58557C12.9611 2.21063 13.4697 2 14 2C14.5303 2 15.0389 2.21063 15.414 2.58557L18 5.17157C18.3749 5.54663 18.5856 6.05524 18.5856 6.58557C18.5856 7.1159 18.3749 7.62452 18 7.99957L16.414 9.58557L11 4.17157L12.586 2.58557ZM9.586 5.58557L0.586 14.5856C0.210901 14.9606 0.000113275 15.4692 0 15.9996V18.5856C0 19.116 0.210714 19.6247 0.585786 19.9998C0.960859 20.3749 1.46957 20.5856 2 20.5856H4.586C5.11639 20.5855 5.62501 20.3747 6 19.9996L15 10.9996L9.586 5.58557Z"/><path d="M13 20H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
+            <div class="order-taken__content">
+                <div class="order-taken__check-content">
+                    <h1 class="order-taken__check-title">Ваш заказ принят!</h1>
+                    <div class="order-taken__check-sub-title">
+                        В ближайшее время с Вами свяжется наш менеджер для уточнения деталей заказа
                     </div>
-                    <ul class="order__list">
-                        <li class="order__list-item">
-                            <span>YMC² Magnetic Bearing Centrifugal Chiller</span>
-                            <span class="order__list-item--after-text">1 шт х 61 990 ₽</span>
+                    <ul class="order-taken__check-list">
+                        <li class="order-taken__check-list-item">
+                            <span class="order-taken__check-list-item--black">Номер заказа:</span>
+                            <span>2452 (413467901)</span>
                         </li>
-                        <li class="order__list-item">
-                            <span>Samsung Galaxy S21 FE 6/128GB (графитовый) </span>
-                            <span class="order__list-item--after-text">1 шт х 1 990 ₽</span>
+                        <li class="order-taken__check-list-item">
+                            <span class="order-taken__check-list-item--black">Дата заказа:</span>
+                            <span>20.11.20 12:19</span>
                         </li>
-                        <li class="order__list-item">
-                            <span>YMC² Magnetic Bearing</span>
-                            <span class="order__list-item--after-text">1 шт х 990 ₽</span>
+                        <li class="order-taken__check-list-item">
+                            <span class="order-taken__check-list-item--black">Доставка:</span>
+                            <span>по согласованию</span>
+                        </li>
+                        <li class="order-taken__check-list-item">
+                            <span class="order-taken__check-list-item--black">Сумма к оплате:</span>
+                            <span>11 500 руб.</span>
                         </li>
                     </ul>
-                    <div class="order__total-block order__total-block--first-block">
-                        <div class="order__total-title">Итоговая стоимость</div>
-                        <div class="order__total-price">9 600</div>
-                    </div>
-                </div>
-                <div class="order__item">
-                    <div class="order__edit-content" style="display: block">
-                        <h2 class="order__item-title">Укажите покупателя</h2>
-                        <div class="order__inputs-block">
-                            <label class="order__label order__label--input">
-                                <span class="order__input-name">Ф.И.О.</span>
-                                <input type="text" class="order__input">
-                            </label>
-                            <label class="order__label order__label--input">
-                                <span class="order__input-name">E-mail</span>
-                                <input type="email" class="order__input">
-                            </label>
-                            <label class="order__label order__label--input">
-                                <span class="order__input-name">Телефон</span>
-                                <input type="tel" class="order__input">
-                            </label>
-                            <button type="button" class="order__btn-next" step="2">
-                                <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
-                                </svg>
-                                <span>Продолжить</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="order__text-content">
-                        <div class="order__item-title-block">
-                            <h2 class="order__item-title">Получатель</h2>
-                            <button type="button" class="order__btn-edit" step="2">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.586 2.58557C12.9611 2.21063 13.4697 2 14 2C14.5303 2 15.0389 2.21063 15.414 2.58557L18 5.17157C18.3749 5.54663 18.5856 6.05524 18.5856 6.58557C18.5856 7.1159 18.3749 7.62452 18 7.99957L16.414 9.58557L11 4.17157L12.586 2.58557ZM9.586 5.58557L0.586 14.5856C0.210901 14.9606 0.000113275 15.4692 0 15.9996V18.5856C0 19.116 0.210714 19.6247 0.585786 19.9998C0.960859 20.3749 1.46957 20.5856 2 20.5856H4.586C5.11639 20.5855 5.62501 20.3747 6 19.9996L15 10.9996L9.586 5.58557Z"/><path d="M13 20H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <ul class="order__list">
-                            <li class="order__list-item">
-                                <span>Петрова Александра Ивановна</span>
-                            </li>
-                            <li class="order__list-item">
-                                <span>+7 (000) 999-99-99</span>
-                            </li>
-                            <li class="order__list-item">
-                                <span>testmail@mail.ru</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="order__item">
-                    <div class="order__item-title order__item-title--name-block">2. Способ получения заказа</div>
-                    <div class="order__edit-content">
-                        <h2 class="order__item-title">Способ получения заказа</h2>
-                        <div class="order__radio-buttons">
-                            <label class="order__label order__label--radio active">
-                                <input type="radio" name="delivery" checked>
-                                <span class="order__radio-title-block">
-                                    <span class="order__radio-title">Самовывоз</span>
-                                    <span class="order__radio-sub-title">Сегодня бесплатно</span>
-                                </span>
-                                <span class="order__radio-icon"></span>
-                            </label>
-                            <label class="order__label order__label--radio">
-                                <input type="radio" name="delivery">
-                                <span class="order__radio-title-block">
-                                    <span class="order__radio-title">Оформить доставку</span>
-                                    <span class="order__radio-sub-title">Бесплатно от 20 000₽</span>
-                                </span>
-                                <span class="order__radio-icon"></span>
-                            </label>
-                        </div>
-                        <a href="#" class="order__map-link">
-                            <span>Посмотреть на карте</span>
-                            <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
+                    <a href="#" class="order-taken__print-link">Распечатать бланк заказа</a>
+                    <h2 class="order-taken__social-title">Попишитесь на наши соц. сети</h2>
+                    <div class="order-taken__socials">
+                        <a href="#" class="order-taken__social-link">
+                            <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.4788 7.14061C22.6246 6.65623 22.4788 6.30103 21.7892 6.30103H19.5048C18.9236 6.30103 18.6579 6.60832 18.5121 6.94582C18.5121 6.94582 17.3507 9.77811 15.7048 11.6146C15.1736 12.1489 14.9309 12.3177 14.6413 12.3177C14.4965 12.3177 14.2861 12.1489 14.2861 11.6646V7.14061C14.2861 6.55936 14.1184 6.30103 13.634 6.30103H10.0444C9.6819 6.30103 9.46315 6.56978 9.46315 6.82603C9.46315 7.37603 10.2861 7.50311 10.3704 9.05311V12.4156C10.3704 13.1521 10.2382 13.2864 9.94649 13.2864C9.17253 13.2864 7.28919 10.4437 6.17148 7.18957C5.95378 6.55728 5.73398 6.30207 5.15065 6.30207H2.86732C2.21419 6.30207 2.08398 6.60936 2.08398 6.94686C2.08398 7.55311 2.85794 10.5531 5.68919 14.5208C7.57669 17.2302 10.234 18.6989 12.6548 18.6989C14.1059 18.6989 14.285 18.3729 14.285 17.8104V15.7625C14.285 15.1104 14.4236 14.9792 14.8829 14.9792C15.2204 14.9792 15.8017 15.15 17.1569 16.4552C18.7048 18.0031 18.9611 18.6979 19.8309 18.6979H22.1142C22.7663 18.6979 23.0923 18.3719 22.9048 17.7281C22.6996 17.0875 21.96 16.1552 20.9788 15.0521C20.4454 14.4229 19.6486 13.7458 19.4059 13.4073C19.0673 12.9708 19.1652 12.7781 19.4059 12.3906C19.4069 12.3917 22.1892 8.4729 22.4788 7.14061Z"/>
                             </svg>
+                            <span>ВКонтакте</span>
                         </a>
-                        <div class="order__map-block">
-                            <div id="map"></div>
-                            <div class="order__contacts">
-                                <div class="order__contacts-block">
-                                    <div class="order__contacts-block-name">Адрес</div>
-                                    <div class="order__contacts-text">109052, Москва, ул. Нижегородская, д. 50  </div>
-                                </div>
-                                <div class="order__contacts-block">
-                                    <div class="order__contacts-block-name">Номер телефона</div>
-                                    <div class="order__contacts-text">+7 (495) 003-8869</div>
-                                </div>
-                                <div class="order__contacts-block">
-                                    <div class="order__contacts-block-name">Время работы</div>
-                                    <div class="order__contacts-text">
-                                        <b>10:00 — 19:00 </b>
-                                        <span class="order__contacts-text--normal">Пн.-пт.</span>
+                        <a href="#" class="order-taken__social-link">
+                            <svg viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.50094 7.02653C8.13903 7.02653 7.0276 8.13795 7.0276 9.49987C7.0276 10.8618 8.13903 11.9732 9.50094 11.9732C10.8629 11.9732 11.9743 10.8618 11.9743 9.49987C11.9743 8.13795 10.8629 7.02653 9.50094 7.02653ZM16.9191 9.49987C16.9191 8.47565 16.9284 7.46071 16.8709 6.43834C16.8133 5.25084 16.5424 4.19694 15.6741 3.32858C14.8039 2.45836 13.7518 2.18932 12.5643 2.1318C11.5401 2.07428 10.5252 2.08356 9.5028 2.08356C8.47858 2.08356 7.46364 2.07428 6.44127 2.1318C5.25377 2.18932 4.19987 2.46022 3.33151 3.32858C2.46129 4.19879 2.19225 5.25084 2.13473 6.43834C2.07721 7.46256 2.08649 8.47751 2.08649 9.49987C2.08649 10.5222 2.07721 11.539 2.13473 12.5614C2.19225 13.7489 2.46315 14.8028 3.33151 15.6712C4.20172 16.5414 5.25377 16.8104 6.44127 16.8679C7.46549 16.9255 8.48043 16.9162 9.5028 16.9162C10.527 16.9162 11.542 16.9255 12.5643 16.8679C13.7518 16.8104 14.8057 16.5395 15.6741 15.6712C16.5443 14.8009 16.8133 13.7489 16.8709 12.5614C16.9302 11.539 16.9191 10.5241 16.9191 9.49987ZM9.50094 13.3054C7.39499 13.3054 5.69538 11.6058 5.69538 9.49987C5.69538 7.39391 7.39499 5.6943 9.50094 5.6943C11.6069 5.6943 13.3065 7.39391 13.3065 9.49987C13.3065 11.6058 11.6069 13.3054 9.50094 13.3054ZM13.4624 6.42721C12.9707 6.42721 12.5736 6.03014 12.5736 5.53844C12.5736 5.04674 12.9707 4.64967 13.4624 4.64967C13.9541 4.64967 14.3511 5.04674 14.3511 5.53844C14.3513 5.6552 14.3284 5.77084 14.2838 5.87873C14.2392 5.98663 14.1737 6.08467 14.0912 6.16722C14.0086 6.24978 13.9106 6.31524 13.8027 6.35986C13.6948 6.40447 13.5791 6.42736 13.4624 6.42721Z"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="order-taken__order-content">
+                    <div class="order-taken__order-title-block">
+                        <div class="order-taken__order-title">Ваш заказ</div>
+                        <div class="order-taken__order-qty">
+                            <span class="order-taken__order-qty--gray desktop">Всего позиций: </span>
+                            <span class="desktop">4</span>
+                            <span class="order-taken__order-qty--gray mobile">4 товара</span>
+                        </div>
+                    </div>
+                    <ul class="order-taken__order-list">
+                        <li class="order-taken__order-item">
+                            <div class="order-taken__img-box">
+                                <img src="img/cart-img1.png" alt="">
+                            </div>
+                            <div class="order-taken__order-info-block">
+                                <div class="order-taken__order-inner">
+                                    <h2 class="order-taken__order-item-title">YMC² Magnetic Bearing Centrifugal Chiller</h2>
+                                    <div class="order-taken__price-block">
+                                        <div class="order-taken__qty">
+                                            <span class="order-taken__qty--gray">Количество: </span>
+                                            <span>2</span>
+                                        </div>
+                                        <div class="order-taken__price mobile">3 020</div>
                                     </div>
                                 </div>
+                                <div class="order-taken__price desktop">3 020</div>
                             </div>
-                        </div>
-                        <button type="button" class="order__btn-next" step="3">
-                            <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
-                            </svg>
-                            <span>Продолжить</span>
-                        </button>
-
-                        <script src="https://api-maps.yandex.ru/2.1/?apikey=c9e39c09-0f62-4828-b0ce-7ca99a606b15&lang=ru_RU" type="text/javascript"></script>
-                        <script src="js/map.js"></script>
-                    </div>
-                    <div class="order__text-content">
-                        <div class="order__item-title-block">
-                            <h2 class="order__item-title">Самовывоз из магазина</h2>
-                            <button type="button" class="order__btn-edit" step="3">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.586 2.58557C12.9611 2.21063 13.4697 2 14 2C14.5303 2 15.0389 2.21063 15.414 2.58557L18 5.17157C18.3749 5.54663 18.5856 6.05524 18.5856 6.58557C18.5856 7.1159 18.3749 7.62452 18 7.99957L16.414 9.58557L11 4.17157L12.586 2.58557ZM9.586 5.58557L0.586 14.5856C0.210901 14.9606 0.000113275 15.4692 0 15.9996V18.5856C0 19.116 0.210714 19.6247 0.585786 19.9998C0.960859 20.3749 1.46957 20.5856 2 20.5856H4.586C5.11639 20.5855 5.62501 20.3747 6 19.9996L15 10.9996L9.586 5.58557Z"/><path d="M13 20H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <ul class="order__list">
-                            <li class="order__list-item">
-                                <span>109052, Москва, ул. Нижегородская, д. 50  </span>
-                            </li>
-                            <li class="order__list-item">
-                                <span>Бесплатно, 29 апреля (пт), с 14:30</span>
-                            </li>
-                        </ul>
-                    </div>
+                        </li>
+                        <li class="order-taken__order-item">
+                            <div class="order-taken__img-box">
+                                <img src="img/cart-img1.png" alt="">
+                            </div>
+                            <div class="order-taken__order-info-block">
+                                <div class="order-taken__order-inner">
+                                    <h2 class="order-taken__order-item-title">YMC² Magnetic Bearing Centrifugal Chiller</h2>
+                                    <div class="order-taken__price-block">
+                                        <div class="order-taken__qty">
+                                            <span class="order-taken__qty--gray">Количество: </span>
+                                            <span>2</span>
+                                        </div>
+                                        <div class="order-taken__price mobile">3 020</div>
+                                    </div>
+                                </div>
+                                <div class="order-taken__price desktop">3 020</div>
+                            </div>
+                        </li>
+                        <li class="order-taken__order-item">
+                            <div class="order-taken__img-box">
+                                <img src="img/cart-img1.png" alt="">
+                            </div>
+                            <div class="order-taken__order-info-block">
+                                <div class="order-taken__order-inner">
+                                    <h2 class="order-taken__order-item-title">YMC² Magnetic Bearing Centrifugal Chiller</h2>
+                                    <div class="order-taken__price-block">
+                                        <div class="order-taken__qty">
+                                            <span class="order-taken__qty--gray">Количество: </span>
+                                            <span>2</span>
+                                        </div>
+                                        <div class="order-taken__price mobile">3 020</div>
+                                    </div>
+                                </div>
+                                <div class="order-taken__price desktop">3 020</div>
+                            </div>
+                        </li>
+                        <li class="order-taken__order-item">
+                            <div class="order-taken__img-box">
+                                <img src="img/cart-img1.png" alt="">
+                            </div>
+                            <div class="order-taken__order-info-block">
+                                <div class="order-taken__order-inner">
+                                    <h2 class="order-taken__order-item-title">YMC² Magnetic Bearing Centrifugal Chiller</h2>
+                                    <div class="order-taken__price-block">
+                                        <div class="order-taken__qty">
+                                            <span class="order-taken__qty--gray">Количество: </span>
+                                            <span>2</span>
+                                        </div>
+                                        <div class="order-taken__price mobile">3 020</div>
+                                    </div>
+                                </div>
+                                <div class="order-taken__price desktop">3 020</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="order__item order__item--last">
-                    <div class="order__item-title order__item-title--name-block">3. Способ оплаты</div>
-                    <div class="order__edit-content">
-                        <h2 class="order__item-title">Способ получения заказа</h2>
-                        <div class="order__radio-buttons">
-                            <label class="order__label order__label--radio active">
-                                <input type="radio" name="pay" checked>
-                                <span class="order__radio-title-block">
-                                    <span class="order__radio-title">Онлайн</span>
-                                    <span class="order__radio-sub-title">VISA, MASTERCARD, МИР</span>
-                                </span>
-                                <span class="order__radio-icon"></span>
-                            </label>
-                            <label class="order__label order__label--radio">
-                                <input type="radio" name="pay">
-                                <span class="order__radio-title-block">
-                                    <span class="order__radio-title">При получении</span>
-                                    <span class="order__radio-sub-title">Наличными, картой, по СМС</span>
-                                </span>
-                                <span class="order__radio-icon"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="order__submit-block">
-                        <div class="order__total-block">
-                            <div class="order__total-title">Итоговая стоимость</div>
-                            <div class="order__total-price">9 600</div>
-                        </div>
-                        <button type="button" class="order__btn-next">
-                            <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
-                            </svg>
-                            <span class="desktop">Подтвердить заказ</span>
-                            <span class="mobile">Подтвердить</span>
-                        </button>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
     </section>
 </main>
