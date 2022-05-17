@@ -37,6 +37,10 @@
 @import "order/order";
 @import "order/order-taken";
 
+@import "personal/personal";
+@import "personal/personal-form";
+@import "personal/my-order";
+
 body.lock {
   overflow: hidden;
 }

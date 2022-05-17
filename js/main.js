@@ -2,6 +2,9 @@
 
 $(document).ready(function () {
 
+    $('.input-phone').mask('+7 (999) 999-99-99');
+    // $('.input-date').mask('99.99.9999');
+
     // Функция рейтинга для отзывов
     $('.reviews__item-rating-block').each(function () {
         let rating = $(this).attr('rating');
@@ -148,4 +151,18 @@ $(document).ready(function () {
         $(this).parent().find('label').removeClass('active');
         $(this).addClass('active');
     });
+
+    // Personal
+    $('.personal__back-btn').click(function () {
+        $('body').addClass('lock');
+        $('.personal__menu').css('transform', 'translateX(0)');
+    });
+    $('.personal__list-item.active').click(function () {
+        $('body').removeClass('lock');
+        $('.personal__menu').css('transform', 'translateX(-100%)');
+    });
+    if (!$('.personal__avatar img').attr('src')) {
+        $('.personal__avatar').html($('.personal__username').text().slice(0, 1));
+    }
+
 });

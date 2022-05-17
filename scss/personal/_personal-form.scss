@@ -1,0 +1,155 @@
+@import "../param";
+
+.personal-form {
+  padding: 4.5rem 3rem 3rem 3rem;
+  background-color: #fff;
+  box-shadow: 1.5rem 2rem 10rem 0 rgba(218, 221, 231, 0.6);
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+
+  &__content {
+  }
+
+  &__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5.5rem;
+  }
+
+  &__label {
+    width: 30rem;
+    margin-right: 4rem;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__input-name {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #7B7F8E;
+  }
+
+  &__input {
+    width: 100%;
+    height: 3.9rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(123, 127, 142, 0.6);
+
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+
+    &:focus {
+      border-bottom: 1px solid $purple;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+    height: 6.2rem;
+    padding: 0 3.5rem;
+    margin-right: 2rem;
+    background-color: $purple;
+
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    color: white;
+
+    &:hover {
+      background-color: $purple-hover;
+    }
+  }
+
+  &__cancel {
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .personal-form {
+    padding: 5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 10rem;
+    }
+
+    &__title {
+      margin-bottom: 6rem;
+      font-size: 3.8rem;
+      line-height: 5.6rem;
+    }
+
+    &__content {
+    }
+
+    &__inputs {
+      margin-bottom: 5rem;
+    }
+
+    &__label {
+      width: 100%;
+      margin: 0;
+
+      &:nth-child(n + 2) {
+        margin-top: 4rem;
+      }
+    }
+
+    &__input-name {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+
+    &__input {
+      width: 100%;
+      height: 6.4rem;
+      padding: 1rem 0;
+      font-size: 3rem;
+      line-height: 4.4rem;
+    }
+
+    &__buttons {
+      justify-content: space-between;
+    }
+
+    &__submit {
+      justify-content: center;
+      width: 40rem;
+      height: 10.8rem;
+      padding: 0;
+      margin-right: 0;
+
+      font-size: 3.2rem;
+      line-height: 4rem;
+    }
+
+    &__cancel {
+      font-size: 3.2rem;
+      line-height: 4rem;
+    }
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="another website">
-    <title>Корзина</title>
+    <title>Личный кабинет</title>
 
     <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -355,204 +355,159 @@
 <div class="page-navigation desktop">
     <div class="container page-navigation__container">
         <a href="#" class="page-navigation__page page-navigation__page--old">Главная</a>
-        <div class="page-navigation__page page-navigation__page--current">Корзина</div>
+        <div class="page-navigation__page page-navigation__page--current">Личный кабинет</div>
     </div>
 </div>
 
 <main>
-    <section class="order">
-        <div class="container">
-            <h1 class="order__title">Оформление заказа</h1>
-            <form class="order__form">
-                <div class="order__item">
-                    <div class="order__item-title-block">
-                        <h2 class="order__item-title">Состав заказа</h2>
-                        <a href="#" class="order__btn-edit">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.586 2.58557C12.9611 2.21063 13.4697 2 14 2C14.5303 2 15.0389 2.21063 15.414 2.58557L18 5.17157C18.3749 5.54663 18.5856 6.05524 18.5856 6.58557C18.5856 7.1159 18.3749 7.62452 18 7.99957L16.414 9.58557L11 4.17157L12.586 2.58557ZM9.586 5.58557L0.586 14.5856C0.210901 14.9606 0.000113275 15.4692 0 15.9996V18.5856C0 19.116 0.210714 19.6247 0.585786 19.9998C0.960859 20.3749 1.46957 20.5856 2 20.5856H4.586C5.11639 20.5855 5.62501 20.3747 6 19.9996L15 10.9996L9.586 5.58557Z"/><path d="M13 20H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
+    <section class="personal">
+        <div class="container personal__container">
+            <nav class="personal__menu">
+                <h2 class="personal__title personal__title--page mobile">Личный кабинет</h2>
+                <div class="personal__menu-nav">
+                    <div class="personal__user">
+                        <div class="personal__avatar">
+                            <img src="" alt="">
+                        </div>
+                        <div class="personal__user-info">
+                            <div class="personal__username">Александра</div>
+                            <div class="personal__user-tel">+7 (900) 111-00-00</div>
+                        </div>
                     </div>
-                    <ul class="order__list">
-                        <li class="order__list-item">
-                            <span>YMC² Magnetic Bearing Centrifugal Chiller</span>
-                            <span class="order__list-item--after-text">1 шт х 61 990 ₽</span>
+                    <ul class="personal__list">
+                        <li class="personal__list-item active">
+                            <div class="personal__link">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C9.38 2 7.25 4.13 7.25 6.75C7.25 9.32 9.26 11.4 11.88 11.49C11.96 11.48 12.04 11.48 12.1 11.49C12.12 11.49 12.13 11.49 12.15 11.49C12.16 11.49 12.16 11.49 12.17 11.49C14.73 11.4 16.74 9.32 16.75 6.75C16.75 4.13 14.62 2 12 2Z"/><path d="M17.0809 14.1499C14.2909 12.2899 9.74094 12.2899 6.93094 14.1499C5.66094 14.9999 4.96094 16.1499 4.96094 17.3799C4.96094 18.6099 5.66094 19.7499 6.92094 20.5899C8.32094 21.5299 10.1609 21.9999 12.0009 21.9999C13.8409 21.9999 15.6809 21.5299 17.0809 20.5899C18.3409 19.7399 19.0409 18.5999 19.0409 17.3599C19.0309 16.1299 18.3409 14.9899 17.0809 14.1499Z"/>
+                                </svg>
+                                <span>Личные данные</span>
+                            </div>
                         </li>
-                        <li class="order__list-item">
-                            <span>Samsung Galaxy S21 FE 6/128GB (графитовый) </span>
-                            <span class="order__list-item--after-text">1 шт х 1 990 ₽</span>
+                        <li class="personal__list-item">
+                            <a href="#" class="personal__link">
+                                <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_105_3332)">
+                                        <path d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 5H20V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM20 17.5V6.25H0V17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5ZM13.5675 11.0675L9.8175 14.8175C9.75944 14.8757 9.69047 14.9219 9.61454 14.9534C9.53861 14.9849 9.45721 15.0011 9.375 15.0011C9.29279 15.0011 9.21139 14.9849 9.13546 14.9534C9.05953 14.9219 8.99056 14.8757 8.9325 14.8175L7.0575 12.9425C6.94014 12.8251 6.87421 12.666 6.87421 12.5C6.87421 12.334 6.94014 12.1749 7.0575 12.0575C7.17486 11.9401 7.33403 11.8742 7.5 11.8742C7.66597 11.8742 7.82514 11.9401 7.9425 12.0575L9.375 13.4913L12.6825 10.1825C12.7999 10.0651 12.959 9.99921 13.125 9.99921C13.291 9.99921 13.4501 10.0651 13.5675 10.1825C13.6849 10.2999 13.7508 10.459 13.7508 10.625C13.7508 10.791 13.6849 10.9501 13.5675 11.0675Z"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_105_3332">
+                                            <rect/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Мои заказы</span>
+                            </a>
                         </li>
-                        <li class="order__list-item">
-                            <span>YMC² Magnetic Bearing</span>
-                            <span class="order__list-item--after-text">1 шт х 990 ₽</span>
+                        <li class="personal__list-item">
+                            <a href="#" class="personal__link">
+                                <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.9915 1.8335C5.93148 1.8335 1.83398 5.94016 1.83398 11.0002C1.83398 16.0602 5.93148 20.1668 10.9915 20.1668C16.0607 20.1668 20.1673 16.0602 20.1673 11.0002C20.1673 5.94016 16.0607 1.8335 10.9915 1.8335ZM14.6673 14.6668C14.5825 14.7518 14.4818 14.8192 14.3709 14.8652C14.26 14.9112 14.1411 14.9349 14.0211 14.9349C13.901 14.9349 13.7821 14.9112 13.6712 14.8652C13.5604 14.8192 13.4596 14.7518 13.3748 14.6668L10.359 11.651C10.2724 11.5661 10.2035 11.4649 10.1563 11.3531C10.1091 11.2414 10.0845 11.1214 10.084 11.0002V7.3335C10.084 6.82933 10.4965 6.41683 11.0007 6.41683C11.5048 6.41683 11.9173 6.82933 11.9173 7.3335V10.6243L14.6673 13.3743C15.0248 13.7318 15.0248 14.3093 14.6673 14.6668Z"/>
+                                </svg>
+                                <span>История заказов</span>
+                            </a>
+                        </li>
+                        <li class="personal__list-item">
+                            <a href="#" class="personal__link">
+                                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_105_3340)">
+                                        <path d="M12.8687 11.6237C14.1231 11.1774 15.1729 10.2911 15.8232 9.12928C16.4735 7.96746 16.6801 6.60912 16.4045 5.30652C15.9762 3.20903 14.2934 1.50969 12.1932 1.07651C11.3887 0.901728 10.5553 0.909608 9.7543 1.09956C8.95329 1.28952 8.20508 1.65672 7.56477 2.17411C6.92446 2.69151 6.40835 3.34594 6.05444 4.08921C5.70053 4.83248 5.51784 5.64566 5.51981 6.46888C5.52342 7.60532 5.87962 8.71264 6.53926 9.63805C7.1989 10.5635 8.12947 11.2614 9.20258 11.6355L9.21541 15.6224L7.38235 15.6283C6.37417 15.6315 5.55195 16.459 5.55519 17.4672C5.55844 18.4754 6.38597 19.2976 7.39415 19.2944L9.2272 19.2885C9.23044 20.2966 10.058 21.1189 11.0662 21.1156C12.0743 21.1124 12.8966 20.2849 12.8933 19.2767L12.8687 11.6237ZM9.18592 6.45709C9.18267 5.44891 10.0049 4.62138 11.0131 4.61813C12.0213 4.61489 12.8488 5.43711 12.852 6.44529C12.8553 7.45347 12.033 8.281 11.0249 8.28424C10.0167 8.28749 9.18916 7.46527 9.18592 6.45709Z"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_105_3340">
+                                            <rect transform="translate(21.9961) rotate(89.8157)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Смена пароля</span>
+                            </a>
                         </li>
                     </ul>
-                    <div class="order__total-block order__total-block--first-block">
-                        <div class="order__total-title">Итоговая стоимость</div>
-                        <div class="order__total-price">9 600</div>
-                    </div>
                 </div>
-                <div class="order__item">
-                    <div class="order__edit-content" style="display: block">
-                        <h2 class="order__item-title">Укажите покупателя</h2>
-                        <div class="order__inputs-block">
-                            <label class="order__label order__label--input">
-                                <span class="order__input-name">Ф.И.О.</span>
-                                <input type="text" class="order__input">
+                <a href="#" class="personal__logout personal__link">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12C22 10.0222 21.4135 8.08879 20.3147 6.4443C19.2159 4.79981 17.6541 3.51809 15.8268 2.76121C13.9996 2.00433 11.9889 1.8063 10.0491 2.19215C8.10929 2.578 6.32746 3.53041 4.92894 4.92894C3.53041 6.32746 2.578 8.10929 2.19215 10.0491C1.8063 11.9889 2.00433 13.9996 2.76121 15.8268C3.51809 17.6541 4.79981 19.2159 6.4443 20.3147C8.08879 21.4135 10.0222 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12ZM10.14 15.69L7.28 12.69C7.23768 12.6466 7.20377 12.5958 7.18 12.54C7.13754 12.493 7.10369 12.4388 7.08 12.38C7.0271 12.2603 6.99977 12.1309 6.99977 12C6.99977 11.8691 7.0271 11.7397 7.08 11.62C7.1276 11.4973 7.19896 11.3851 7.29 11.29L10.29 8.29C10.4783 8.1017 10.7337 7.99591 11 7.99591C11.2663 7.99591 11.5217 8.1017 11.71 8.29C11.8983 8.47831 12.0041 8.7337 12.0041 9C12.0041 9.26631 11.8983 9.5217 11.71 9.71L10.41 11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12C17 12.2652 16.8946 12.5196 16.7071 12.7071C16.5196 12.8946 16.2652 13 16 13H10.34L11.59 14.31C11.773 14.5023 11.8721 14.7594 11.8656 15.0248C11.859 15.2901 11.7473 15.542 11.555 15.725C11.3627 15.908 11.1056 16.0071 10.8403 16.0006C10.5749 15.994 10.323 15.8823 10.14 15.69Z"/>
+                    </svg>
+                    <span>Выйти</span>
+                </a>
+            </nav>
+            <div class="personal__content">
+                <button type="button" class="personal__back-btn mobile">
+                    <svg viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 1L1 6L6 11" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 6L13 6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Назад</span>
+                </button>
+                <h1 class="personal__title">Личные данные</h1>
+                <div class="personal-form">
+                    <h2 class="personal-form__title">Мои данные</h2>
+                    <form class="personal-form__content">
+                        <div class="personal-form__inputs">
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Фамилия</span>
+                                <input type="text" class="personal-form__input">
                             </label>
-                            <label class="order__label order__label--input">
-                                <span class="order__input-name">E-mail</span>
-                                <input type="email" class="order__input">
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Имя</span>
+                                <input type="text" class="personal-form__input">
                             </label>
-                            <label class="order__label order__label--input">
-                                <span class="order__input-name">Телефон</span>
-                                <input type="tel" class="order__input input-phone">
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Отчество</span>
+                                <input type="text" class="personal-form__input">
                             </label>
-                            <button type="button" class="order__btn-next" step="2">
-                                <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
-                                </svg>
-                                <span>Продолжить</span>
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Дата рождения</span>
+                                <input type="date" class="personal-form__input">
+                            </label>
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Телефон</span>
+                                <input type="tel" class="personal-form__input input-phone">
+                            </label>
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">E-маил</span>
+                                <input type="email" class="personal-form__input">
+                            </label>
+                        </div>
+                        <div class="personal-form__buttons">
+                            <button class="personal-form__submit">
+                                <span class="desktop">Сохранить изменения</span>
+                                <span class="mobile">Сохранить</span>
                             </button>
+                            <button class="personal-form__cancel">Отмена</button>
                         </div>
-                    </div>
-                    <div class="order__text-content">
-                        <div class="order__item-title-block">
-                            <h2 class="order__item-title">Получатель</h2>
-                            <button type="button" class="order__btn-edit" step="2">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.586 2.58557C12.9611 2.21063 13.4697 2 14 2C14.5303 2 15.0389 2.21063 15.414 2.58557L18 5.17157C18.3749 5.54663 18.5856 6.05524 18.5856 6.58557C18.5856 7.1159 18.3749 7.62452 18 7.99957L16.414 9.58557L11 4.17157L12.586 2.58557ZM9.586 5.58557L0.586 14.5856C0.210901 14.9606 0.000113275 15.4692 0 15.9996V18.5856C0 19.116 0.210714 19.6247 0.585786 19.9998C0.960859 20.3749 1.46957 20.5856 2 20.5856H4.586C5.11639 20.5855 5.62501 20.3747 6 19.9996L15 10.9996L9.586 5.58557Z"/><path d="M13 20H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <ul class="order__list">
-                            <li class="order__list-item">
-                                <span>Петрова Александра Ивановна</span>
-                            </li>
-                            <li class="order__list-item">
-                                <span>+7 (000) 999-99-99</span>
-                            </li>
-                            <li class="order__list-item">
-                                <span>testmail@mail.ru</span>
-                            </li>
-                        </ul>
-                    </div>
+                    </form>
                 </div>
-                <div class="order__item">
-                    <div class="order__item-title order__item-title--name-block">2. Способ получения заказа</div>
-                    <div class="order__edit-content">
-                        <h2 class="order__item-title">Способ получения заказа</h2>
-                        <div class="order__radio-buttons">
-                            <label class="order__label order__label--radio active">
-                                <input type="radio" name="delivery" checked>
-                                <span class="order__radio-title-block">
-                                    <span class="order__radio-title">Самовывоз</span>
-                                    <span class="order__radio-sub-title">Сегодня бесплатно</span>
-                                </span>
-                                <span class="order__radio-icon"></span>
+                <div class="personal-form">
+                    <h2 class="personal-form__title">Адреса доставки</h2>
+                    <form class="personal-form__content">
+                        <div class="personal-form__inputs">
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Страна</span>
+                                <input type="text" class="personal-form__input">
                             </label>
-                            <label class="order__label order__label--radio">
-                                <input type="radio" name="delivery">
-                                <span class="order__radio-title-block">
-                                    <span class="order__radio-title">Оформить доставку</span>
-                                    <span class="order__radio-sub-title">Бесплатно от 20 000₽</span>
-                                </span>
-                                <span class="order__radio-icon"></span>
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Город</span>
+                                <input type="text" class="personal-form__input">
+                            </label>
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Улица</span>
+                                <input type="text" class="personal-form__input">
+                            </label>
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Дом</span>
+                                <input type="date" class="personal-form__input">
+                            </label>
+                            <label class="personal-form__label">
+                                <span class="personal-form__input-name">Квартира</span>
+                                <input type="tel" class="personal-form__input input-phone">
                             </label>
                         </div>
-                        <a href="#" class="order__map-link">
-                            <span>Посмотреть на карте</span>
-                            <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
-                            </svg>
-                        </a>
-                        <div class="order__map-block">
-                            <div id="map"></div>
-                            <div class="order__contacts">
-                                <div class="order__contacts-block">
-                                    <div class="order__contacts-block-name">Адрес</div>
-                                    <div class="order__contacts-text">109052, Москва, ул. Нижегородская, д. 50  </div>
-                                </div>
-                                <div class="order__contacts-block">
-                                    <div class="order__contacts-block-name">Номер телефона</div>
-                                    <div class="order__contacts-text">+7 (495) 003-8869</div>
-                                </div>
-                                <div class="order__contacts-block">
-                                    <div class="order__contacts-block-name">Время работы</div>
-                                    <div class="order__contacts-text">
-                                        <b>10:00 — 19:00 </b>
-                                        <span class="order__contacts-text--normal">Пн.-пт.</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="personal-form__buttons">
+                            <button class="personal-form__submit">Сохранить изменения</button>
+                            <button class="personal-form__cancel">Отмена</button>
                         </div>
-                        <button type="button" class="order__btn-next" step="3">
-                            <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
-                            </svg>
-                            <span>Продолжить</span>
-                        </button>
-
-                        <script src="https://api-maps.yandex.ru/2.1/?apikey=c9e39c09-0f62-4828-b0ce-7ca99a606b15&lang=ru_RU" type="text/javascript"></script>
-                        <script src="js/map.js"></script>
-                    </div>
-                    <div class="order__text-content">
-                        <div class="order__item-title-block">
-                            <h2 class="order__item-title">Самовывоз из магазина</h2>
-                            <button type="button" class="order__btn-edit" step="3">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.586 2.58557C12.9611 2.21063 13.4697 2 14 2C14.5303 2 15.0389 2.21063 15.414 2.58557L18 5.17157C18.3749 5.54663 18.5856 6.05524 18.5856 6.58557C18.5856 7.1159 18.3749 7.62452 18 7.99957L16.414 9.58557L11 4.17157L12.586 2.58557ZM9.586 5.58557L0.586 14.5856C0.210901 14.9606 0.000113275 15.4692 0 15.9996V18.5856C0 19.116 0.210714 19.6247 0.585786 19.9998C0.960859 20.3749 1.46957 20.5856 2 20.5856H4.586C5.11639 20.5855 5.62501 20.3747 6 19.9996L15 10.9996L9.586 5.58557Z"/><path d="M13 20H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <ul class="order__list">
-                            <li class="order__list-item">
-                                <span>109052, Москва, ул. Нижегородская, д. 50  </span>
-                            </li>
-                            <li class="order__list-item">
-                                <span>Бесплатно, 29 апреля (пт), с 14:30</span>
-                            </li>
-                        </ul>
-                    </div>
+                    </form>
                 </div>
-                <div class="order__item order__item--last">
-                    <div class="order__item-title order__item-title--name-block">3. Способ оплаты</div>
-                    <div class="order__edit-content">
-                        <h2 class="order__item-title">Способ получения заказа</h2>
-                        <div class="order__radio-buttons">
-                            <label class="order__label order__label--radio active">
-                                <input type="radio" name="pay" checked>
-                                <span class="order__radio-title-block">
-                                    <span class="order__radio-title">Онлайн</span>
-                                    <span class="order__radio-sub-title">VISA, MASTERCARD, МИР</span>
-                                </span>
-                                <span class="order__radio-icon"></span>
-                            </label>
-                            <label class="order__label order__label--radio">
-                                <input type="radio" name="pay">
-                                <span class="order__radio-title-block">
-                                    <span class="order__radio-title">При получении</span>
-                                    <span class="order__radio-sub-title">Наличными, картой, по СМС</span>
-                                </span>
-                                <span class="order__radio-icon"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="order__submit-block">
-                        <div class="order__total-block">
-                            <div class="order__total-title">Итоговая стоимость</div>
-                            <div class="order__total-price">9 600</div>
-                        </div>
-                        <button type="button" class="order__btn-next">
-                            <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
-                            </svg>
-                            <span class="desktop">Подтвердить заказ</span>
-                            <span class="mobile">Подтвердить</span>
-                        </button>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
     </section>
 </main>
