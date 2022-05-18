@@ -15,6 +15,12 @@
     background-color: #E6EAF4;
   }
 
+  &--bg-empty {
+    &:after {
+      content: none;
+    }
+  }
+
   &__title {
     width: 64rem;
     margin-bottom: 7.7rem;

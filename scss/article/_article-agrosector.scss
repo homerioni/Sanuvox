@@ -1,0 +1,69 @@
+@import "../param";
+
+.article-agrosector {
+  margin-bottom: 18rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__image-block {
+    width: 32rem;
+    height: 45.4rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text-content {
+    width: 98rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    color: $default-color;
+  }
+
+  &__text {
+  }
+}
+
+@media (max-width: 48em) {
+  .article-agrosector {
+    margin-bottom: 10rem;
+
+    &__container {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 10rem;
+      }
+    }
+
+    &__image-block {
+      width: calc(100% + 8rem);
+      height: 38.2rem;
+      margin: 6rem -4rem 0 -4rem;
+    }
+
+    &__text-content {
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+    }
+  }
+}

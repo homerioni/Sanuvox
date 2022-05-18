@@ -3,7 +3,6 @@
 $(document).ready(function () {
 
     $('.input-phone').mask('+7 (999) 999-99-99');
-    // $('.input-date').mask('99.99.9999');
 
     // Функция рейтинга для отзывов
     $('.reviews__item-rating-block').each(function () {
@@ -164,5 +163,47 @@ $(document).ready(function () {
     if (!$('.personal__avatar img').attr('src')) {
         $('.personal__avatar').html($('.personal__username').text().slice(0, 1));
     }
+
+    // login
+    $('.login__restore').click(function () {
+        $('input').val('');
+        $('.login__content').removeClass('active');
+        $('.login__content--restore').addClass('active');
+    });
+    $('.login__back-btn').click(function () {
+        $('input').val('');
+        $('.login__content').removeClass('active');
+        $('.login__content--login').addClass('active');
+    });
+    $('.register-btn').click(function () {
+        $('input').val('');
+        $('.login__content').removeClass('active');
+        $('.login__content--register').addClass('active');
+    });
+    $('.login-btn').click(function () {
+        $('input').val('');
+        $('.login__content').removeClass('active');
+        $('.login__content--login').addClass('active');
+    });
+    $('.restore-btn').click(function () {
+        $('.login__content').removeClass('active');
+        $('.login__restore-confirm').addClass('active');
+    });
+    $('.eye-icon-off').click(function () {
+        $(this).hide();
+        $(this).parent().find('.eye-icon-on').show();
+        $(this).parent().parent().find('input').attr('type', 'text');
+    });
+    $('.eye-icon-on').click(function () {
+        $(this).hide();
+        $(this).parent().find('.eye-icon-off').show();
+        $(this).parent().parent().find('input').attr('type', 'password');
+    });
+
+    // more-btn
+    $('.circle-btn--more-btn').click(function () {
+        $(this).parent().find('.hide').removeClass('hide');
+        $(this).hide();
+    });
 
 });

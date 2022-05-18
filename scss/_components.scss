@@ -192,6 +192,24 @@
       width: 6.8rem;
       height: 2.4rem;
     }
+
+    &--more-btn {
+      &:before {
+        background: #E6EAF4;
+      }
+
+      svg {
+        transform: rotate(90deg);
+      }
+
+      .circle-btn__text {
+        margin-right: 0;
+      }
+
+      &.bottom {
+        margin-bottom: 10rem;
+      }
+    }
   }
 
   .article {
@@ -256,5 +274,14 @@
         margin: 0 0.8rem;
       }
     }
+  }
+
+  .hide {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 8 !important;
+    -webkit-box-orient: vertical !important;
+    margin-bottom: 6rem !important;
   }
 }

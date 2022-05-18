@@ -4,19 +4,21 @@
 @import "footer";
 @import "intro";
 @import "modal";
+@import "login";
 
 @import "main/about-intro";
 @import "main/prod-category";
 @import "main/about-info";
 @import "main/projects";
 
-@import "living/article-why-you";
-@import "living/list-features";
-
-@import "food/article-technology";
-@import "food/article-life";
-@import "food/article-advantages";
-@import "food/info-cards";
+@import "article/article-why-you";
+@import "article/list-features";
+@import "article/article-technology";
+@import "article/article-life";
+@import "article/article-advantages";
+@import "article/info-cards";
+@import "article/article-agrosector";
+@import "article/article-medicine";
 
 @import "about/intro-about-page";
 @import "about/about-article";
@@ -40,6 +42,7 @@
 @import "personal/personal";
 @import "personal/personal-form";
 @import "personal/my-order";
+@import "personal/buy-history";
 
 body.lock {
   overflow: hidden;

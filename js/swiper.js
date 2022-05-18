@@ -103,6 +103,14 @@ const intro_slider = new Swiper('.intro__swiper', {
         delay: 5000,
         disableOnInteraction: true,
     },
+
+    on: {
+        init: function () {
+            if ($('.intro__image-item').length === 1) {
+                $('.intro__navigation-block').hide();
+            }
+        },
+    },
 });
 
 const about_intro_slider = new Swiper('.about-intro__slider', {
