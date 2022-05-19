@@ -28,6 +28,9 @@
   }
 
   &__cards {
+  }
+
+  &__wrapper {
     display: flex;
     flex-wrap: wrap;
   }
@@ -143,12 +146,25 @@
   .info-cards {
     margin-bottom: 20rem;
 
+    &:after {
+      top: 64rem;
+      height: 54.4rem;
+    }
+
     &__title {
       width: 100%;
       margin-bottom: 7rem;
     }
 
     &__cards {
+    }
+
+    &__wrapper {
+      flex-wrap: nowrap;
+    }
+
+    &__navigation-block {
+      margin-top: 6rem;
     }
 
     &__item {

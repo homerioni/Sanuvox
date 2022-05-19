@@ -321,3 +321,48 @@ const related_products_slider = new Swiper('.related-products__cards', {
         disableOnInteraction: true,
     },
 });
+
+if ($(window).width() <= 768) {
+    $('.info-cards__cards').addClass('swiper');
+    $('.info-cards__wrapper').addClass('swiper-wrapper');
+    $('.info-cards__item').addClass('swiper-slide');
+
+    const info_cards_slider = new Swiper('.info-cards__cards', {
+        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: rem(5),
+
+        pagination: {
+            el: '.info-cards__pagination',
+            type: 'fraction',
+            formatFractionCurrent: function (number) {
+                if (number < 10) {
+                    return '0' + number;
+                } else {
+                    return number;
+                }
+            },
+            formatFractionTotal: function (number) {
+                if (number < 10) {
+                    return '0' + number;
+                } else {
+                    return number;
+                }
+            },
+            renderFraction: function (currentClass, totalClass) {
+                return '<div class="' + currentClass + '"></div>' +
+                    '<div class="' + totalClass + '"></div>';
+            },
+        },
+
+        navigation: {
+            nextEl: '.info-cards__arrow-right',
+            prevEl: '.info-cards__arrow-left',
+        },
+
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+        },
+    });
+}
