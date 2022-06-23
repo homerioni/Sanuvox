@@ -206,4 +206,14 @@ $(document).ready(function () {
         $(this).hide();
     });
 
+    // category tabs
+    $('.category__tab').click(function () {
+        $('.category__tab').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.category__tab-content input').change(function () {
+        $('.category__tab-content').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+
 });

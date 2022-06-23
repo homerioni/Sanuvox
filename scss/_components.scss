@@ -135,6 +135,11 @@
 .page-navigation {
   margin-bottom: 6rem;
 
+  &--category {
+    margin-top: -6rem;
+    margin-bottom: 8rem;
+  }
+
   &__container {
     display: flex;
     align-items: center;
