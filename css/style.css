@@ -1340,7 +1340,7 @@ body {
   line-height: 2rem;
 }
 .intro--main {
-  margin-bottom: 0;
+  margin-bottom: 22rem;
 }
 
 @media (max-width: 48em) {
@@ -1419,7 +1419,7 @@ body {
     line-height: 2rem;
   }
   .intro--main {
-    margin-bottom: 0;
+    margin-bottom: 20rem;
   }
 }
 .modal-video {
@@ -1825,7 +1825,6 @@ body {
 .about-intro {
   margin-bottom: 18rem;
   padding: 6.6rem 0 5rem 0;
-  border-bottom: 2px solid #E6EBF5;
 }
 .about-intro__cards {
   display: -webkit-box;
@@ -7210,6 +7209,7 @@ body {
   font-size: 1.8rem;
   line-height: 2.3rem;
   color: #7E838C;
+  cursor: pointer;
 }
 .category__tab.active {
   border-bottom: 2px solid #9661B0;
