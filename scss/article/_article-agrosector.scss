@@ -15,13 +15,28 @@
 
   &__image-block {
     width: 32rem;
+    user-select: none;
+  }
+
+  &__slider {
+    width: 100%;
     height: 45.4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__img-box {
+    width: 100%;
+    height: 100%;
 
     > img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+  }
+
+  &__navigation-block {
+    justify-content: center;
   }
 
   &__text-content {

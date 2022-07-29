@@ -366,3 +366,42 @@ if ($(window).width() <= 768) {
         },
     });
 }
+
+document.querySelectorAll('.article-agrosector__image-block').forEach(n => {
+    const agrosector_image_slider = new Swiper(n.querySelector('.article-agrosector__slider'), {
+        direction: "horizontal",
+        slidesPerView: 1,
+        spaceBetween: rem(5),
+        loop: true,
+
+        navigation: {
+            nextEl: n.querySelector('.next'),
+            prevEl: n.querySelector('.prev'),
+        },
+
+        pagination: {
+            el: n.querySelector('.slider-nav__pagination'),
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass, index, total) {
+                return '<div class="' + currentClass + '">'+ index +'</div>' +
+                    '<div class="' + totalClass + '">'+ total +'</div>';
+            },
+            formatFractionCurrent: function (number) {
+                if (number < 10) {
+                    return '0' + number;
+                } else {
+                    return number;
+                }
+            },
+            formatFractionTotal: function (number) {
+                if (number < 10) {
+                    return '0' + number;
+                } else {
+                    return number;
+                }
+            },
+        },
+    });
+
+    agrosector_image_slider.controller.control = agrosector_image_slider;
+});
