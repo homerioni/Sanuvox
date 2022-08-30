@@ -121,6 +121,7 @@
     margin-top: 0;
 
     &__bg {
+      display: none;
       top: 0;
       height: 100%;
     }
@@ -151,6 +152,7 @@
     }
 
     &__slider {
+      align-items: flex-end;
       width: 61rem;
     }
 
@@ -174,6 +176,7 @@
     &__navigation-block {
       flex: none;
       width: 6rem;
+      margin-bottom: 5rem;
     }
 
     &__arrow {

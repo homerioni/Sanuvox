@@ -424,6 +424,7 @@
 
     &__buttons {
       width: 21.6rem;
+      margin-left: auto;
     }
 
     &__icon-btn {
@@ -437,6 +438,7 @@
       display: block;
       height: 3.6rem;
       margin-bottom: 1rem;
+      margin-left: 5rem;
 
       > span {
         position: relative;
