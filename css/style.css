@@ -1489,6 +1489,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.modal-video__iframe {
+  width: 100%;
+  height: 100%;
+}
 .modal-video__play-btn {
   position: relative;
   display: -webkit-box;
@@ -1516,6 +1520,27 @@ body {
   fill: #262525;
 }
 
+@media (max-width: 48em) {
+  .modal-video__content {
+    width: 95%;
+    padding: 6rem;
+    background-color: #fff;
+  }
+  .modal-video__close {
+    width: 5rem;
+    height: 5rem;
+  }
+  .modal-video__title {
+    margin-bottom: 4rem;
+    padding-right: 4rem;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .modal-video__video {
+    width: 100%;
+    height: 34rem;
+  }
+}
 .login {
   display: -webkit-box;
   display: -ms-flexbox;

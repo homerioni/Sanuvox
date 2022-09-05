@@ -63,9 +63,16 @@ $(document).ready(function () {
 
     // Modal video
     $('.modal-video').css('display', 'flex').hide();
-    $('.video__play-btn').click(function () {
-        let img = $(this).parent().find('.video__preview img').attr('src');
-        $('.modal-video__video').css('background-image', 'url("' + img + '")')
+    $('.video-play').click(function () {
+        let getLink = $(this).parents('.video__item').attr('video')
+            .replace('.com/embed/', '.com/watch?v=')
+            .replace('.be/', '.com/watch?v=')
+            .split(".com/watch?v=")[1]
+            .split("&index")[0]
+            .replace('&', '?');
+
+        $('body').addClass('lock');
+        $('.modal-video iframe').attr('src', 'https://www.youtube.com/embed/' + getLink);
         $('.modal-video').fadeIn('fast');
     });
     $('.modal-video__close').click(function () {
