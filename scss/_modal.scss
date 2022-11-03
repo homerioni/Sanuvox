@@ -90,6 +90,432 @@
   }
 }
 
+.modal-feedback {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(116, 116, 116, 0.4);
+
+  &--one {
+    .modal-feedback__content {
+      > * {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &--two {
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &__content-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 80% 0;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    width: 84rem;
+    padding: 9rem 9rem 12rem 9rem;
+    background-color: #fff;
+  }
+
+  &__close {
+    position: absolute;
+    right: 3.5rem;
+    top: 3.5rem;
+    width: 5rem;
+    height: 5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80%;
+      height: 2px;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: $default-color;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80%;
+      height: 2px;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background-color: $default-color;
+    }
+  }
+
+  &__title {
+    width: fit-content;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: 4.5rem;
+  }
+
+  &__label {
+    display: block;
+    width: 30rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #9661B0;
+    cursor: pointer;
+
+    &.active {
+      .modal-feedback__label-name {
+        color: #9661B0;
+      }
+    }
+  }
+
+  &__label-name {
+    margin-bottom: 0.7rem;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: #7B7F8E;
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 0.7rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 26.3rem;
+    height: 8.5rem;
+    padding: 0 3rem;
+    background-color: #9661B0;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.02em;
+    color: white;
+
+    > svg {
+      flex: none;
+      width: 3.4rem;
+      height: 1.1rem;
+      margin-right: 2rem;
+
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+
+.modal-add-cart {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(116, 116, 116, 0.4);
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    width: 80rem;
+    min-height: 68rem;
+    padding: 8.5rem;
+    background-color: #fff;
+  }
+
+  &__close {
+    position: absolute;
+    right: 3.5rem;
+    top: 3.5rem;
+    width: 5rem;
+    height: 5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80%;
+      height: 2px;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: $default-color;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80%;
+      height: 2px;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background-color: $default-color;
+    }
+  }
+
+  &__title {
+    width: 39rem;
+    margin-bottom: 6rem;
+    font-weight: 500;
+    font-size: 4.5rem;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+
+  &__img-box {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 1rem;
+    background-color: white;
+    box-shadow: 1.5rem 2rem 10rem rgba(218, 221, 231, 0.6);
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__name-box {
+    width: 22rem;
+    margin-right: 3.5rem;
+    font-size: 1.8rem;
+  }
+
+  &__name {
+    margin-bottom: 1rem;
+  }
+
+  &__qty {
+    font-size: 1.2rem;
+  }
+
+  &__price {
+    align-self: center;
+    font-weight: 600;
+    font-size: 2rem;
+
+    > sup {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30.3rem;
+    height: 7.6rem;
+    border: 3px solid #E6EAF4;
+    font-weight: 500;
+    font-size: 2rem;
+
+    > svg {
+      width: 3.4rem;
+      height: 1.1rem;
+      margin-left: 2rem;
+      transform: translateY(3px);
+
+      path {
+        fill: $default-color;
+      }
+    }
+
+    &--purple {
+      border: none;
+      background-color: #9661B0;
+      color: white;
+
+      > svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
+        margin-left: 0;
+        transform: none;
+
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
+.modal-registered {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(116, 116, 116, 0.4);
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    width: 86rem;
+    padding: 9rem 8rem;
+    background-color: #fff;
+  }
+
+  &__close {
+    position: absolute;
+    right: 3.5rem;
+    top: 3.5rem;
+    width: 5rem;
+    height: 5rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80%;
+      height: 2px;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: $default-color;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80%;
+      height: 2px;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background-color: $default-color;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: 4.5rem;
+  }
+
+  &__desc {
+    margin-bottom: 10rem;
+    font-family: 'Circe Regular';
+    font-size: 1.8rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30.3rem;
+    height: 7.6rem;
+    padding: 0 2.5rem;
+    border: 3px solid #E6EAF4;
+    font-weight: 500;
+    font-size: 2rem;
+
+    > svg {
+      width: 3.4rem;
+      height: 1.1rem;
+      margin-left: 2rem;
+      transform: translateY(3px);
+
+      path {
+        fill: $default-color;
+      }
+    }
+
+    &--purple {
+      border: none;
+      background-color: #9661B0;
+      color: white;
+
+      > svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
+        margin-left: 0;
+        transform: none;
+
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 48em) {
   .modal-video {
     &__bg {
@@ -119,6 +545,234 @@
     }
 
     &__iframe {
+    }
+  }
+
+  .modal-feedback {
+    &--one {}
+
+    &--two {
+      .modal-feedback__content {
+        padding: 9rem 18rem 12rem 6rem;
+      }
+    }
+
+    &__bg {
+    }
+
+    &__content-bg {
+    }
+
+    &__content {
+      width: 90%;
+      padding: 9rem 9rem 12rem 9rem;
+    }
+
+    &__close {
+      right: 3rem;
+      top: 3rem;
+      width: 6rem;
+      height: 6rem;
+    }
+
+    &__title {
+      margin-bottom: 5rem;
+      font-size: 5rem;
+    }
+
+    &__label {
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+
+    &__label-name {
+      margin-bottom: 1.4rem;
+      font-size: 2.2rem;
+      line-height: 3.4rem;
+    }
+
+    &__input {
+      margin-bottom: 1.4rem;
+      font-size: 2.4rem;
+      line-height: 3.4rem;
+    }
+
+    &__btn {
+      min-width: 39.5rem;
+      height: 13rem;
+      padding: 0 5rem;
+      font-size: 2.6rem;
+      line-height: 3.6rem;
+
+      > svg {
+        flex: none;
+        width: 5.1rem;
+        height: 1.6rem;
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  .modal-add-cart {
+    &__bg {
+    }
+
+    &__content {
+      width: 90%;
+      padding: 9rem 6rem;
+    }
+
+    &__close {
+      right: 3rem;
+      top: 3rem;
+      width: 6rem;
+      height: 6rem;
+    }
+
+    &__title {
+      width: 90%;
+      font-size: 5rem;
+    }
+
+    &__item {
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+    }
+
+    &__img-box {
+      width: 14rem;
+      height: 14rem;
+      margin-right: 2rem;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__name-box {
+      width: 35rem;
+      margin-right: 4rem;
+      font-size: 3rem;
+    }
+
+    &__name {
+      margin-bottom: 2rem;
+    }
+
+    &__qty {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 2.4rem;
+    }
+
+    &__price {
+      margin-top: 0;
+      font-size: 3rem;
+
+      > sup {
+        font-size: 2rem;
+      }
+    }
+
+    &__buttons {
+      display: block;
+    }
+
+    &__btn {
+      width: 100%;
+      height: 10rem;
+      border: 2px solid #E6EAF4;
+      font-size: 2.8rem;
+
+      > svg {
+        width: 5.1rem;
+        height: 1.6rem;
+        margin-left: 3rem;
+        transform: translateY(0);
+      }
+
+      &--purple {
+        border: none;
+
+        > svg {
+          width: 3.6rem;
+          height: 3.6rem;
+          margin-right: 2rem;
+          margin-left: 0;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .modal-registered {
+    &__bg {
+    }
+
+    &__content {
+      width: 90%;
+      padding: 9rem 6rem;
+    }
+
+    &__close {
+      right: 3rem;
+      top: 3rem;
+      width: 6rem;
+      height: 6rem;
+    }
+
+    &__title {
+      font-size: 5rem;
+    }
+
+    &__title {
+      margin-bottom: 3rem;
+      font-weight: 500;
+      font-size: 4.5rem;
+    }
+
+    &__desc {
+      margin-bottom: 8rem;
+      font-size: 2.6rem;
+    }
+
+    &__buttons {
+      display: block;
+    }
+
+    &__btn {
+      width: 100%;
+      height: 10rem;
+      border: 2px solid #E6EAF4;
+      font-size: 2.8rem;
+
+      > svg {
+        width: 5.1rem;
+        height: 1.6rem;
+        margin-left: 3rem;
+        transform: translateY(0);
+      }
+
+      &--purple {
+        border: none;
+
+        > svg {
+          width: 3.6rem;
+          height: 3.6rem;
+          margin-right: 2rem;
+          margin-left: 0;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
     }
   }
 }

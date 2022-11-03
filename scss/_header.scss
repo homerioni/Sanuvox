@@ -102,6 +102,8 @@
   }
 
   &__icon-btn {
+    position: relative;
+
     > svg {
       width: 2.4rem;
       height: 2.4rem;
@@ -110,6 +112,22 @@
         fill: #6F7385;
       }
     }
+  }
+
+  &__cart-number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.3rem;
+    height: 1.3rem;
+    transform: translate(50%, 30%);
+    border-radius: 100%;
+    background-color: #9661B0;
+    font-size: 1rem;
+    color: white;
   }
 
   &__bottom-link-list {

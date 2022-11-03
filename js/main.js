@@ -76,9 +76,11 @@ $(document).ready(function () {
         $('.modal-video').fadeIn('fast');
     });
     $('.modal-video__close').click(function () {
+        $('body').removeClass('lock');
         $('.modal-video').fadeOut();
     });
     $('.modal-video__bg').click(function () {
+        $('body').removeClass('lock');
         $('.modal-video').fadeOut();
     });
 
@@ -113,12 +115,6 @@ $(document).ready(function () {
             case '2':
                 item_current = $('.order__item:nth-child(2)');
                 item_next = $('.order__item:nth-child(3)');
-                // item_current.find('.order__list').html('');
-                // item_current.find('.order__label').each(function () {
-                //     item_current.find('.order__list').append(
-                //         '<li class="order__list-item">' + $(this).find('input').val() + '</li>'
-                //     );
-                // });
                 item_current.find('.order__edit-content').hide();
                 item_current.find('.order__text-content').show();
                 item_next.find('.order__item-title--name-block').hide();
@@ -221,6 +217,46 @@ $(document).ready(function () {
     $('.category__tab-content input').change(function () {
         $('.category__tab-content').removeClass('active');
         $(this).parent().addClass('active');
+    });
+
+    // Modal feedback
+    $('.popup-feedback-one').click(function () {
+        $('body').addClass('lock');
+        $('.modal-feedback--one').css('display', 'flex').hide().fadeIn();
+    });
+    $('.popup-feedback-two').click(function () {
+        $('body').addClass('lock');
+        $('.modal-feedback--two').css('display', 'flex').hide().fadeIn();
+    });
+    $('.modal-feedback .close').click(function () {
+        $('body').removeClass('lock');
+        $(this).parents('.modal-feedback').fadeOut(150);
+        $('.modal-feedback input').val('');
+    });
+    $('.modal-feedback__input').focusin(function () {
+        $(this).parent().addClass('active');
+    }).focusout(function () {
+        $(this).parent().removeClass('active');
+    });
+
+    // Modal cart
+    $('.popup-add-cart').click(function () {
+        $('body').addClass('lock');
+        $('.modal-add-cart').css('display', 'flex').hide().fadeIn();
+    });
+    $('.modal-add-cart .close').click(function () {
+        $('body').removeClass('lock');
+        $(this).parents('.modal-add-cart').fadeOut(150);
+    });
+
+    // Modal registered
+    $('.popup-registered').click(function () {
+        $('body').addClass('lock');
+        $('.modal-registered').css('display', 'flex').hide().fadeIn();
+    });
+    $('.modal-registered .close').click(function () {
+        $('body').removeClass('lock');
+        $(this).parents('.modal-registered').fadeOut(150);
     });
 
 });
