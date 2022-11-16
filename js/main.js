@@ -231,12 +231,18 @@ $(document).ready(function () {
     $('.modal-feedback .close').click(function () {
         $('body').removeClass('lock');
         $(this).parents('.modal-feedback').fadeOut(150);
-        $('.modal-feedback input').val('');
+        setTimeout(() => {
+            $('.modal-feedback input').val('');
+            $('.modal-feedback__content').removeClass('complete');
+        }, 150);
     });
     $('.modal-feedback__input').focusin(function () {
         $(this).parent().addClass('active');
     }).focusout(function () {
         $(this).parent().removeClass('active');
+    });
+    $('.modal-feedback__btn').click(function () {
+        $('.modal-feedback__content').addClass('complete');
     });
 
     // Modal cart
