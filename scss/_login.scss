@@ -24,6 +24,10 @@
     &.active {
       display: block;
     }
+
+    &--change-password {
+
+    }
   }
 
   &__sub-title {
@@ -198,6 +202,24 @@
     font-size: 3rem;
     line-height: 4rem;
   }
+
+  &__back-link {
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    > svg {
+      width: 3.4rem;
+      height: 1.1rem;
+      margin-right: 1.5rem;
+
+      path {
+        fill: #262525;
+      }
+    }
+  }
 }
 
 @media (max-width: 48em) {
@@ -329,6 +351,18 @@
       font-size: 4rem;
       line-height: 6rem;
       text-align: center;
+    }
+
+    &__back-link {
+      margin-top: 0;
+      margin-bottom: 10rem;
+      font-size: 3rem;
+
+      > svg {
+        width: 6.8rem;
+        height: 2.2rem;
+        margin-right: 3rem;
+      }
     }
   }
 }

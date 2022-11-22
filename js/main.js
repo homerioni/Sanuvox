@@ -202,6 +202,10 @@ $(document).ready(function () {
         $('.login__content').removeClass('active');
         $('.login__restore-confirm').addClass('active');
     });
+    $('.change-password-btn').click(function () {
+        $('.login__content').removeClass('active');
+        $('.login__restore-confirm').addClass('active');
+    });
     $('.eye-icon-off').click(function () {
         $(this).hide();
         $(this).parent().find('.eye-icon-on').show();
