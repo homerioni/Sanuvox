@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="another website">
-    <title>Вход</title>
+    <title>404</title>
 
     <link rel="stylesheet" href="font/stylesheet.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="full">
 
 
-<header class="header header--bg-empty">
+<header class="header">
     <div class="container mobile">
         <nav class="header__block header__block--mobile">
             <a href="/" class="header__logo">
@@ -415,109 +415,26 @@
 </div>
 
 <main>
-    <section class="login">
-        <div class="login__img-box">
-            <img src="img/login.jpeg" alt="">
-        </div>
-        <div class="login__content login__content--login active">
-            <h2 class="login__sub-title">Вход</h2>
-            <h1 class="login__title">Личный кабинет</h1>
-            <form class="login__form">
-                <label class="login__label">
-                    <span class="login__input-name">Логин</span>
-                    <input type="text" class="login__input">
-                </label>
-                <label class="login__label login__label--password">
-                    <span class="login__input-name">Пароль</span>
-                    <input type="password" class="login__input">
-                    <span class="login__eye-icon">
-                        <img src="img/eye.svg" alt="" class="eye-icon-on">
-                        <img src="img/eye-off.svg" alt="" class="eye-icon-off">
-                    </span>
-                </label>
-                <button type="button" class="login__restore login__link">Забыли пароль?</button>
-                <button type="submit" class="login__submit">
-                    <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
+    <section class="error-404">
+        <div class="container">
+            <div class="error-404__content">
+                <h2 class="error-404__title">Страница не найдена</h2>
+                <p class="error-404__desc">
+                    К сожалению, что-то пошло не так, и страница не найдена. Мы с этим разбираемся
+                </p>
+                <a href="" class="error-404__btn">
+                    <svg width="34" height="11" viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z" fill="white"/>
                     </svg>
-                    <span>Войти</span>
-                </button>
-            </form>
-            <div class="login__register-block">
-                <span>Нет аккаунта?</span>
-                <button type="button" class="login__link login__link--bottom register-btn">Зарегистрироваться</button>
+                    <span>На главную</span>
+                </a>
             </div>
         </div>
-        <div class="login__content login__content--register">
-            <h2 class="login__sub-title">Личный кабинет</h2>
-            <h1 class="login__title">Регистрация</h1>
-            <form class="login__form">
-                <label class="login__label">
-                    <span class="login__input-name">E-mail</span>
-                    <input type="email" class="login__input">
-                </label>
-                <label class="login__label login__label--password">
-                    <span class="login__input-name">Пароль</span>
-                    <input type="password" class="login__input">
-                    <span class="login__eye-icon">
-                        <img src="img/eye.svg" alt="" class="eye-icon-on">
-                        <img src="img/eye-off.svg" alt="" class="eye-icon-off">
-                    </span>
-                </label>
-                <label class="login__label login__label--password">
-                    <span class="login__input-name">Повторите пароль</span>
-                    <input type="password" class="login__input">
-                    <span class="login__eye-icon">
-                        <img src="img/eye.svg" alt="" class="eye-icon-on">
-                        <img src="img/eye-off.svg" alt="" class="eye-icon-off">
-                    </span>
-                </label>
-                <button type="submit" class="login__submit">
-                    <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
-                    </svg>
-                    <span>Зарегистрироваться</span>
-                </button>
-            </form>
-            <div class="login__register-block">
-                <span>Уже есть аккаунт?</span>
-                <button type="button" class="login__link login__link--bottom login-btn">Войти</button>
-            </div>
+        <div class="error-404__img-box">
+            <img src="img/error-404-bg.webp" alt="">
         </div>
-        <div class="login__content login__content--restore">
-            <h2 class="login__sub-title">Личный кабинет</h2>
-            <h1 class="login__title">Восстановление пароля</h1>
-            <form class="login__form">
-                <label class="login__label">
-                    <span class="login__input-name">E-mail</span>
-                    <input type="email" class="login__input">
-                </label>
-                <button class="login__submit restore-btn">
-                    <svg viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M28.9589 0L27.4444 1.51454L29.9 3.97008H0V6.11198H29.9L27.4444 8.5676L28.9589 10.0821L34 5.04103L28.9589 0Z"/>
-                    </svg>
-                    <span>Восстановить</span>
-                </button>
-            </form>
-            <button class="login__back-btn">
-                <svg class="desktop" viewBox="0 0 34 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.0411 0L6.55557 1.51454L4.10003 3.97008H34V6.11198H4.10003L6.55557 8.5676L5.0411 10.0821L0 5.04103L5.0411 0Z"/>
-                </svg>
-                <svg class="mobile" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 1L1 6L6 11" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 6L13 6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Назад</span>
-            </button>
-        </div>
-        <div class="login__content login__restore-confirm">
-            <div class="login__restore-icon-block">
-                <svg viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M27.5467 2.57324L10.5517 19.5682L2.82666 11.8432" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="login__restore-text">
-                Ссылка с восстановлением пароля отправлена на указанную почту
-            </div>
+        <div class="error-404__bg">
+            <img src="img/intro-bg.svg" alt="">
         </div>
     </section>
 </main>

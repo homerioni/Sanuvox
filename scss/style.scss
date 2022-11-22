@@ -46,9 +46,21 @@
 
 @import "category";
 @import "category-slider";
+@import "error-404";
 
 body.lock {
   overflow: hidden;
+}
+
+.full {
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 48.01em) {

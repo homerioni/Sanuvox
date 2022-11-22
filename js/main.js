@@ -51,14 +51,24 @@ $(document).ready(function () {
 
     // Search
     $('.header__search-btn').click(function () {
-        $('.search').slideDown();
+        $('.search').fadeIn(200);
         setTimeout(function () {
             $('.search__input').focus();
-        }, 300);
+        }, 200);
+    });
+    $('.btn-search-mob').click(function () {
+        $('.search-mob').fadeIn(200);
+        setTimeout(function () {
+            $('.search-mob__label input').focus();
+        }, 200);
     });
     $('.search__close').click(function () {
         $('.search').hide();
         $('.search__input').val('');
+    });
+    $('.search-mob .close').click(function () {
+        $('.search-mob').fadeOut(200);
+        $('.search-mob__label input').val('');
     });
 
     // Modal video
