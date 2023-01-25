@@ -8120,7 +8120,7 @@ body {
   margin-bottom: 4rem;
   -webkit-box-shadow: 0 -2px 0 0 #EEEDED inset;
           box-shadow: 0 -2px 0 0 #EEEDED inset;
-  overflow-x: scroll;
+  overflow: auto;
 }
 .category__tabs:before {
   position: absolute;
@@ -8131,6 +8131,10 @@ body {
   height: 2px;
   background-color: #EEEDED;
 }
+.category__tabs::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 .category__tab {
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -8138,6 +8142,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 2rem 0;
+  margin-bottom: 0;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 2.3rem;
