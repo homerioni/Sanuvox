@@ -170,8 +170,10 @@ $(document).ready(function () {
         $('.personal__menu').css('transform', 'translateX(0)');
     });
     $('.personal__list-item.active').click(function () {
-        $('body').removeClass('lock');
-        $('.personal__menu').css('transform', 'translateX(-100%)');
+        if ($(window).width() <= 768) {
+            $('body').removeClass('lock');
+            $('.personal__menu').css('transform', 'translateX(-100%)');
+        }
     });
     if (!$('.personal__avatar img').attr('src')) {
         $('.personal__avatar').html($('.personal__username').text().slice(0, 1));
